@@ -65,6 +65,8 @@ function toggleBoss(boss) {
 
 const selectedChars = new Set();
 
+document.getElementById('charToggle').addEventListener('click', toggleCharBar);
+
 function toggleCharBar() {
   const icons = document.getElementById('charIcons');
   const btn = document.getElementById('charToggle');
@@ -173,7 +175,7 @@ function characterCard(c) {
   `;
 }
 
-function loadVideo(el, videoId) {
+window.loadVideo = function loadVideo(el, videoId) {
   el.outerHTML = `<iframe class="video-iframe" src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allowfullscreen></iframe>`;
 }
 
@@ -239,6 +241,10 @@ function switchTab(tab) {
   document.body.classList.toggle('mobile-filters-active', tab === 'filters');
 }
 
+document.querySelectorAll('.mobile-tab').forEach(btn => {
+  btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+});
+
 // Restore both panels when resizing to desktop
 window.addEventListener('resize', () => {
   if (!window.matchMedia('(max-width: 768px)').matches) {
@@ -255,6 +261,8 @@ function applyTheme(light) {
   document.body.classList.toggle('light', light);
   document.getElementById('themeToggle').textContent = light ? '☾ Dark' : '☀ Light';
 }
+
+document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 
 function toggleTheme() {
   const nowLight = !document.body.classList.contains('light');
