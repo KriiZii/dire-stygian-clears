@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dire Stygian Clears</title>
+  <link rel="stylesheet" href="dire-stygian-clears.css">
+</head>
+<body>
+
+<header>
+  <span id="byline">Made by Krizi</span>
+  <h1>Dire Stygian Clears</h1>
+  <div id="filters">
+    <button id="themeToggle" onclick="toggleTheme()">&#9728; Light</button>
+  </div>
+</header>
+
+<div id="charBar">
+  <div id="charSearchRow">
+    <input type="text" id="charSearch" placeholder="Search characters...">
+    <button id="charToggle" onclick="toggleCharBar()">&#9650;</button>
+  </div>
+  <div id="filterIcons">
+    <div id="bossIconsSection">
+      <div class="filter-section-label">Boss</div>
+      <div id="bossIcons"></div>
+    </div>
+    <div id="charIconsDivider"></div>
+    <div id="charIconsSection">
+      <div id="charIcons"></div>
+    </div>
+  </div>
+</div>
+
+<div id="videoList"></div>
+
+<script src="dire-stygian-clears.js"></script>
+
+</body>
+</html>
