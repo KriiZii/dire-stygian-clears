@@ -173,12 +173,16 @@ function characterCard(c) {
   `;
 }
 
+function loadVideo(el, videoId) {
+  el.outerHTML = `<iframe class="video-iframe" src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allowfullscreen></iframe>`;
+}
+
 function renderVideos() {
   const container = document.getElementById('videoList');
   container.innerHTML = '';
 
   const filtered = CLEARS.filter(v => {
-    const matchChar = selectedChars.size === 0 || [...selectedChars].every(name => v.characters.some(c => c.name === name));
+    const matchChar = selectedChars.size === 0 || [...selectedChars].some(name => v.characters.some(c => c.name === name));
     const matchBoss = !selectedBoss || v.boss === selectedBoss;
     return matchChar && matchBoss;
   });
@@ -191,14 +195,14 @@ function renderVideos() {
   filtered.forEach(video => {
     const videoId = extractVideoId(video.url);
     const embed = videoId
-      ? `<div class="video-embed-placeholder"
-             onclick="this.outerHTML='<iframe width=560 height=315 src=https://www.youtube.com/embed/${videoId}?autoplay=1 frameborder=0 allowfullscreen></iframe>'">
+      ? `<div class="video-wrapper"><div class="video-embed-placeholder"
+             onclick="loadVideo(this, '${videoId}')">
            <img src="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg" width="560" height="315" class="video-thumb">
            <div class="video-play-btn">&#9654; View Video</div>
-         </div>`
+         </div></div>`
       : `<a href="${video.url}" target="_blank">${video.url}</a>`;
 
-    const charCards = video.characters.map(c => `<td style="vertical-align:top">${characterCard(c)}</td>`).join('');
+    const charCards = video.characters.map(c => `<div class="char-card-wrap">${characterCard(c)}</div>`).join('');
 
     const section = document.createElement('div');
     section.className = 'video-section';
@@ -206,7 +210,7 @@ function renderVideos() {
       <p class="video-title"><strong>${video.boss}</strong> - ${video.clearTime}</p>
       <div class="video-layout">
         ${embed}
-        <table><tr>${charCards}</tr></table>
+        <div class="char-cards-grid">${charCards}</div>
       </div>
     `;
     container.appendChild(section);
@@ -225,6 +229,25 @@ function clearFilter() {
   document.querySelectorAll('#charIcons .char-icon').forEach(el => el.style.display = '');
   renderVideos();
 }
+
+// ── Mobile tabs ───────────────────────────────────────────────────────────────
+
+function switchTab(tab) {
+  document.querySelectorAll('.mobile-tab').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.tab === tab);
+  });
+  document.body.classList.toggle('mobile-filters-active', tab === 'filters');
+}
+
+// Restore both panels when resizing to desktop
+window.addEventListener('resize', () => {
+  if (!window.matchMedia('(max-width: 768px)').matches) {
+    document.body.classList.remove('mobile-filters-active');
+    document.querySelectorAll('.mobile-tab').forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.tab === 'clears');
+    });
+  }
+});
 
 // ── Theme ─────────────────────────────────────────────────────────────────────
 

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dire Stygian Clears</title>
   <link rel="stylesheet" href="dire-stygian-clears.css">
 </head>
@@ -14,6 +15,11 @@
     <button id="themeToggle" onclick="toggleTheme()">&#9728; Light</button>
   </div>
 </header>
+
+<div id="mobileTabs">
+  <button class="mobile-tab active" data-tab="clears" onclick="switchTab('clears')">Clears</button>
+  <button class="mobile-tab" data-tab="filters" onclick="switchTab('filters')">Filters</button>
+</div>
 
 <div id="charBar">
   <div id="charSearchRow">
