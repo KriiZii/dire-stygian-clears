@@ -2418,6 +2418,30 @@
     "clearTime": "79s",
     "characters": [
       {
+        "name": "Varka",
+        "level": 100,
+        "constellation": 6,
+        "talents": [
+          1,
+          13,
+          13
+        ],
+        "weapon": {
+          "name": "Gest of the Mighty Wolf",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "stats": {
+          "atk": 2716,
+          "critRate": 81.2,
+          "critDmg": 235.3,
+          "er": 121.4
+        }
+      },
+      {
         "name": "Ineffa",
         "level": 90,
         "constellation": 1,
@@ -2489,30 +2513,6 @@
           "critDmg": 50,
           "er": 216.5
         }
-      },
-      {
-        "name": "Varka",
-        "level": 100,
-        "constellation": 6,
-        "talents": [
-          1,
-          13,
-          13
-        ],
-        "weapon": {
-          "name": "Gest of the Mighty Wolf",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "A Day Carved From Rising Winds"
-        ],
-        "stats": {
-          "atk": 2716,
-          "critRate": 81.2,
-          "critDmg": 235.3,
-          "er": 121.4
-        }
       }
     ]
   },
@@ -2521,6 +2521,30 @@
     "boss": "Glacial Wolf",
     "clearTime": "63s",
     "characters": [
+      {
+        "name": "Wanderer",
+        "level": 90,
+        "constellation": 4,
+        "talents": [
+          10,
+          10,
+          12
+        ],
+        "weapon": {
+          "name": "Tulaytullah's Remembrance",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Desert Pavilion Chronicle"
+        ],
+        "stats": {
+          "atk": 1934,
+          "critRate": 87.6,
+          "critDmg": 171,
+          "er": 115.5
+        }
+      },
       {
         "name": "Faruzan",
         "level": 90,
@@ -2592,30 +2616,6 @@
           "critDmg": 81.9,
           "er": 173.1
         }
-      },
-      {
-        "name": "Wanderer",
-        "level": 90,
-        "constellation": 4,
-        "talents": [
-          10,
-          10,
-          12
-        ],
-        "weapon": {
-          "name": "Tulaytullah's Remembrance",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "Desert Pavilion Chronicle"
-        ],
-        "stats": {
-          "atk": 1934,
-          "critRate": 87.6,
-          "critDmg": 171,
-          "er": 115.5
-        }
       }
     ]
   },
@@ -2624,6 +2624,31 @@
     "boss": "Watcher",
     "clearTime": "115s",
     "characters": [
+      {
+        "name": "Hu Tao",
+        "level": 90,
+        "constellation": 1,
+        "talents": [
+          10,
+          9,
+          9
+        ],
+        "weapon": {
+          "name": "Staff of Homa",
+          "refinement": 2,
+          "level": 90
+        },
+        "artifacts": [
+          "Marechaussee Hunter"
+        ],
+        "stats": {
+          "hp": 34724,
+          "atk": 1419,
+          "critRate": 64.9,
+          "critDmg": 289,
+          "er": 114.9
+        }
+      },
       {
         "name": "Furina",
         "level": 90,
@@ -2694,31 +2719,6 @@
           "critRate": 48.9,
           "critDmg": 78.8,
           "er": 186.1
-        }
-      },
-      {
-        "name": "Hu Tao",
-        "level": 90,
-        "constellation": 1,
-        "talents": [
-          10,
-          9,
-          9
-        ],
-        "weapon": {
-          "name": "Staff of Homa",
-          "refinement": 2,
-          "level": 90
-        },
-        "artifacts": [
-          "Marechaussee Hunter"
-        ],
-        "stats": {
-          "hp": 34724,
-          "atk": 1419,
-          "critRate": 64.9,
-          "critDmg": 289,
-          "er": 114.9
         }
       }
     ]
@@ -2823,6 +2823,1265 @@
           "critRate": 15.1,
           "critDmg": 50,
           "er": 142.8
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7yIK3yIdxHE",
+    "boss": "Tulpa",
+    "clearTime": "109s",
+    "characters": [
+      {
+        "name": "Flins",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          6,
+          9,
+          10
+        ],
+        "weapon": {
+          "name": "Bloodsoaked Ruins",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "stats": {
+          "atk": 2498,
+          "em": 80,
+          "critRate": 73.7,
+          "critDmg": 233.7,
+          "er": 143.4
+        }
+      },
+      {
+        "name": "Ineffa",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          6,
+          9,
+          9
+        ],
+        "weapon": {
+          "name": "Sacrificer's Staff",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
+        ],
+        "stats": {
+          "atk": 2349,
+          "em": 63,
+          "critRate": 92.1,
+          "critDmg": 146.4,
+          "er": 142
+        }
+      },
+      {
+        "name": "Durin",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          6,
+          9,
+          9
+        ],
+        "weapon": {
+          "name": "Finale of the Deep",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Noblesse Oblige"
+        ],
+        "stats": {
+          "atk": 2164,
+          "em": 65,
+          "critRate": 64.1,
+          "critDmg": 142,
+          "er": 138.2
+        }
+      },
+      {
+        "name": "Chevreuse",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          6,
+          12,
+          9
+        ],
+        "weapon": {
+          "name": "Favonius Lance",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Song of Days Past"
+        ],
+        "stats": {
+          "hp": 38034,
+          "critRate": 46.2,
+          "critDmg": 57,
+          "er": 168.2
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=cbWMNVXiCo0",
+    "boss": "Watcher",
+    "clearTime": "116s",
+    "characters": [
+      {
+        "name": "Nefer",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          9,
+          10,
+          9
+        ],
+        "weapon": {
+          "name": "Blackmarrow Lantern",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "stats": {
+          "atk": 1219,
+          "em": 834,
+          "critRate": 55.9,
+          "critDmg": 252.4,
+          "er": 106.5
+        }
+      },
+      {
+        "name": "Lauma",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          6,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Etherlight Spindlelute",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Deepwood Memories"
+        ],
+        "stats": {
+          "atk": 1362,
+          "em": 991,
+          "critRate": 22.9,
+          "critDmg": 91.2,
+          "er": 202.3
+        }
+      },
+      {
+        "name": "Columbina",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          10,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Favonius Codex",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
+        ],
+        "stats": {
+          "hp": 38275,
+          "critRate": 73.6,
+          "critDmg": 170.5,
+          "er": 199.6
+        }
+      },
+      {
+        "name": "Bennett",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          6,
+          12,
+          13
+        ],
+        "weapon": {
+          "name": "Favonius Sword",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Instructor"
+        ],
+        "stats": {
+          "hp": 17548,
+          "critRate": 54.5,
+          "critDmg": 80.5,
+          "er": 232.7
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=rRMLtURaf7U",
+    "boss": "Tulpa",
+    "clearTime": "118s",
+    "characters": [
+      {
+        "name": "Nefer",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          9,
+          10,
+          9
+        ],
+        "weapon": {
+          "name": "Blackmarrow Lantern",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "stats": {
+          "atk": 1219,
+          "em": 834,
+          "critRate": 55.9,
+          "critDmg": 252.4,
+          "er": 106.5
+        }
+      },
+      {
+        "name": "Lauma",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          6,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Prototype Amber",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
+        ],
+        "stats": {
+          "atk": 1311,
+          "em": 977,
+          "critRate": 11.6,
+          "critDmg": 69.4,
+          "er": 204.9
+        }
+      },
+      {
+        "name": "Fischl",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          6,
+          12,
+          12
+        ],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Instructor"
+        ],
+        "stats": {
+          "atk": 1421,
+          "critRate": 59.7,
+          "critDmg": 50,
+          "er": 194.4
+        }
+      },
+      {
+        "name": "Sucrose",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          6,
+          9,
+          9
+        ],
+        "weapon": {
+          "name": "Sacrificial Fragments",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Deepwood Memories"
+        ],
+        "stats": {
+          "em": 897,
+          "critRate": 27.9,
+          "critDmg": 110.6,
+          "er": 155.7
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=74LIuPnnQq8",
+    "boss": "Glacial Wolf",
+    "clearTime": "112s",
+    "characters": [
+      {
+        "name": "Nefer",
+        "level": 90,
+        "constellation": 2,
+        "talents": [
+          1,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Reliquary of Truth",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "stats": {
+          "atk": 1314,
+          "em": 693,
+          "critRate": 61.2,
+          "critDmg": 321.9,
+          "er": 111
+        }
+      },
+      {
+        "name": "Sucrose",
+        "level": 90,
+        "constellation": 3,
+        "talents": [
+          1,
+          4,
+          1
+        ],
+        "weapon": {
+          "name": "Sacrificial Fragments",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Instructor"
+        ],
+        "stats": {
+          "em": 799,
+          "critRate": 12.4,
+          "critDmg": 73,
+          "er": 143.9
+        }
+      },
+      {
+        "name": "Columbina",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          6,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Favonius Codex",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
+        ],
+        "stats": {
+          "hp": 40318,
+          "em": 147,
+          "critRate": 63.1,
+          "critDmg": 152.6,
+          "er": 194.4
+        }
+      },
+      {
+        "name": "Fischl",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          2,
+          13,
+          5
+        ],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 80
+        },
+        "artifacts": [
+          "Deepwood Memories"
+        ],
+        "stats": {
+          "atk": 1247,
+          "critRate": 68.8,
+          "critDmg": 130,
+          "er": 221.9
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Jmr2fSgBA3o",
+    "boss": "Watcher",
+    "clearTime": "109s",
+    "characters": [
+      {
+        "name": "Varesa",
+        "level": 90,
+        "constellation": 3,
+        "talents": [
+          10,
+          8,
+          13
+        ],
+        "weapon": {
+          "name": "Vivid Notions",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Long Night's Oath"
+        ],
+        "stats": {
+          "atk": 2623,
+          "critRate": 98.9,
+          "critDmg": 181.9,
+          "er": 104.5
+        }
+      },
+      {
+        "name": "Diona",
+        "level": 70,
+        "constellation": 6,
+        "talents": [
+          1,
+          9,
+          9
+        ],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Noblesse Oblige"
+        ],
+        "stats": {
+          "hp": 16608,
+          "em": 23,
+          "critRate": 64.5,
+          "critDmg": 102.1,
+          "er": 269.4
+        }
+      },
+      {
+        "name": "Iansan",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          1,
+          4,
+          13
+        ],
+        "weapon": {
+          "name": "Favonius Lance",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "stats": {
+          "atk": 2321,
+          "critRate": 51.7,
+          "critDmg": 100.5,
+          "er": 197.3
+        }
+      },
+      {
+        "name": "Chevreuse",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          1,
+          11,
+          11
+        ],
+        "weapon": {
+          "name": "Dialogues of the Desert Sages",
+          "refinement": 5,
+          "level": 20
+        },
+        "artifacts": [
+          "Song of Days Past"
+        ],
+        "stats": {
+          "hp": 42134,
+          "critRate": 29.5,
+          "critDmg": 63.2,
+          "er": 144.1
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7YizpzXI9uk",
+    "boss": "Glacial Wolf",
+    "clearTime": "115s",
+    "characters": [
+      {
+        "name": "Flins",
+        "level": 90,
+        "constellation": 2,
+        "talents": [
+          1,
+          6,
+          10
+        ],
+        "weapon": {
+          "name": "Bloodsoaked Ruins",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "stats": {
+          "atk": 2437,
+          "em": 143,
+          "critRate": 70.2,
+          "critDmg": 260.2,
+          "er": 123.3
+        }
+      },
+      {
+        "name": "Sucrose",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          6,
+          9,
+          9
+        ],
+        "weapon": {
+          "name": "Sacrificial Fragments",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "stats": {
+          "em": 922,
+          "critRate": 28.3,
+          "critDmg": 95.1,
+          "er": 154.4
+        }
+      },
+      {
+        "name": "Columbina",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          1,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Sacrificial Jade",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
+        ],
+        "stats": {
+          "hp": 37538,
+          "em": 82,
+          "critRate": 84.3,
+          "critDmg": 207,
+          "er": 155
+        }
+      },
+      {
+        "name": "Fischl",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          6,
+          13,
+          11
+        ],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Tenacity of the Millelith"
+        ],
+        "stats": {
+          "atk": 1749,
+          "critRate": 69.2,
+          "critDmg": 129.3,
+          "er": 194.9
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=bVKo0XPKDJQ",
+    "boss": "Tulpa",
+    "clearTime": "48s",
+    "characters": [
+      {
+        "name": "Arlecchino",
+        "level": 90,
+        "constellation": 1,
+        "talents": [
+          10,
+          6,
+          8
+        ],
+        "weapon": {
+          "name": "Crimson Moon's Semblance",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Fragment of Harmonic Whimsy"
+        ],
+        "stats": {
+          "atk": 2193,
+          "em": 84,
+          "critRate": 88.1,
+          "critDmg": 229.1,
+          "er": 105.8
+        }
+      },
+      {
+        "name": "Fischl",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          6,
+          13,
+          11
+        ],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Tenacity of the Millelith"
+        ],
+        "stats": {
+          "atk": 1396,
+          "critRate": 77.3,
+          "critDmg": 106.7,
+          "er": 261.6
+        }
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 2,
+        "talents": [
+          1,
+          10,
+          6
+        ],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "stats": {
+          "atk": 3019,
+          "critRate": 21.3,
+          "critDmg": 71.8,
+          "er": 159.5
+        }
+      },
+      {
+        "name": "Chevreuse",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          1,
+          11,
+          11
+        ],
+        "weapon": {
+          "name": "Symphonist of Scents",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Noblesse Oblige"
+        ],
+        "stats": {
+          "hp": 40312,
+          "critRate": 24.1,
+          "critDmg": 149.6,
+          "er": 197.2
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=L2ErHEpJook",
+    "boss": "Tulpa",
+    "clearTime": "338s",
+    "characters": [
+      {
+        "name": "Skirk",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          1,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Azurelight",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Finale of the Deep Galleries"
+        ],
+        "stats": {
+          "atk": 2168,
+          "critRate": 96.3,
+          "critDmg": 190.2,
+          "er": 131.1
+        }
+      },
+      {
+        "name": "Furina",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          1,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Favonius Sword",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Tenacity of the Millelith"
+        ],
+        "stats": {
+          "hp": 33823,
+          "critRate": 76.3,
+          "critDmg": 134,
+          "er": 272.4
+        }
+      },
+      {
+        "name": "Escoffier",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          1,
+          10,
+          9
+        ],
+        "weapon": {
+          "name": "Favonius Lance",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "stats": {
+          "atk": 1892,
+          "critRate": 77.5,
+          "critDmg": 173.6,
+          "er": 209.6
+        }
+      },
+      {
+        "name": "Mona",
+        "level": 90,
+        "constellation": 2,
+        "talents": [
+          1,
+          1,
+          6
+        ],
+        "weapon": {
+          "name": "Thrilling Tales of Dragon Slayers",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Noblesse Oblige"
+        ],
+        "stats": {
+          "atk": 845,
+          "critRate": 31,
+          "critDmg": 75.7,
+          "er": 253.9
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=L2ErHEpJook",
+    "boss": "Glacial Wolf",
+    "clearTime": "112s",
+    "characters": [
+      {
+        "name": "Nefer",
+        "level": 90,
+        "constellation": 2,
+        "talents": [
+          1,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Reliquary of Truth",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "stats": {
+          "atk": 1314,
+          "em": 693,
+          "critRate": 61.2,
+          "critDmg": 321.9,
+          "er": 111
+        }
+      },
+      {
+        "name": "Sucrose",
+        "level": 70,
+        "constellation": 3,
+        "talents": [
+          1,
+          4,
+          1
+        ],
+        "weapon": {
+          "name": "Sacrificial Fragments",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Instructor"
+        ],
+        "stats": {
+          "em": 799,
+          "critRate": 12.4,
+          "critDmg": 73,
+          "er": 143.9
+        }
+      },
+      {
+        "name": "Columbina",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          6,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Favonius Codex",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
+        ],
+        "stats": {
+          "hp": 40318,
+          "em": 147,
+          "critRate": 63.1,
+          "critDmg": 152.6,
+          "er": 194.4
+        }
+      },
+      {
+        "name": "Fischl",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          2,
+          13,
+          5
+        ],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Deepwood Memories"
+        ],
+        "stats": {
+          "atk": 1247,
+          "critRate": 68.8,
+          "critDmg": 130,
+          "er": 221.9
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=E528FxfoYUI",
+    "boss": "Glacial Wolf",
+    "clearTime": "119s",
+    "characters": [
+      {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          10,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "stats": {
+          "atk": 2312,
+          "em": 35,
+          "critRate": 60.4,
+          "critDmg": 247,
+          "er": 129.1
+        }
+      },
+      {
+        "name": "Iansan",
+        "level": 83,
+        "constellation": 6,
+        "talents": [
+          1,
+          7,
+          13
+        ],
+        "weapon": {
+          "name": "Favonius Lance",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "stats": {
+          "atk": 2354,
+          "critRate": 51.6,
+          "critDmg": 85,
+          "er": 229
+        }
+      },
+      {
+        "name": "Bennett",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          7,
+          12,
+          13
+        ],
+        "weapon": {
+          "name": "Peak Patrol Song",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Noblesse Oblige"
+        ],
+        "stats": {
+          "hp": 19780,
+          "critRate": 38.1,
+          "critDmg": 70.2,
+          "er": 234.2
+        }
+      },
+      {
+        "name": "Lynette",
+        "level": 70,
+        "constellation": 6,
+        "talents": [
+          1,
+          4,
+          4
+        ],
+        "weapon": {
+          "name": "Freedom-Sworn",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "stats": {
+          "atk": 1394,
+          "em": 497,
+          "critRate": 49.3,
+          "critDmg": 71,
+          "er": 213.3
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=E528FxfoYUI",
+    "boss": "Tulpa",
+    "clearTime": "119s",
+    "characters": [
+      {
+        "name": "Nefer",
+        "level": 85,
+        "constellation": 0,
+        "talents": [
+          1,
+          10,
+          8
+        ],
+        "weapon": {
+          "name": "Dawning Frost",
+          "refinement": 3,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "stats": {
+          "atk": 1223,
+          "em": 707,
+          "critRate": 58.7,
+          "critDmg": 257.8,
+          "er": 106.5
+        }
+      },
+      {
+        "name": "Lauma",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          1,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Etherlight Spindlelute",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Deepwood Memories"
+        ],
+        "stats": {
+          "atk": 1182,
+          "em": 998,
+          "critRate": 5,
+          "critDmg": 88.9,
+          "er": 215.2
+        }
+      },
+      {
+        "name": "Fischl",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          4,
+          13,
+          8
+        ],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
+        ],
+        "stats": {
+          "atk": 1576,
+          "critRate": 63.7,
+          "critDmg": 108.3,
+          "er": 266.1
+        }
+      },
+      {
+        "name": "Sucrose",
+        "level": 90,
+        "constellation": 3,
+        "talents": [
+          1,
+          7,
+          6
+        ],
+        "weapon": {
+          "name": "Sacrificial Fragments",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Instructor"
+        ],
+        "stats": {
+          "em": 851,
+          "critRate": 5,
+          "critDmg": 50,
+          "er": 169.8
+        }
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=E528FxfoYUI",
+    "boss": "Watcher",
+    "clearTime": "112s",
+    "characters": [
+      {
+        "name": "Zibai",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          1,
+          10,
+          9
+        ],
+        "weapon": {
+          "name": "Flute of Ezpitzal",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "stats": {
+          "def": 2979,
+          "em": 187,
+          "critRate": 57.5,
+          "critDmg": 212.8,
+          "er": 123.3
+        }
+      },
+      {
+        "name": "Linnea",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          1,
+          10,
+          9
+        ],
+        "weapon": {
+          "name": "Slingshot",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Aubade of Morningstar and Moon"
+        ],
+        "stats": {
+          "def": 2515,
+          "em": 199,
+          "critRate": 77.2,
+          "critDmg": 178.3,
+          "er": 105.2
+        }
+      },
+      {
+        "name": "Columbina",
+        "level": 90,
+        "constellation": 0,
+        "talents": [
+          6,
+          10,
+          10
+        ],
+        "weapon": {
+          "name": "Favonius Codex",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
+        ],
+        "stats": {
+          "hp": 33001,
+          "em": 54,
+          "critRate": 75.9,
+          "critDmg": 158.1,
+          "er": 233.3
+        }
+      },
+      {
+        "name": "Traveler",
+        "level": 90,
+        "constellation": 6,
+        "talents": [
+          7,
+          10,
+          12
+        ],
+        "weapon": {
+          "name": "Sapwood Blade",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Instructor"
+        ],
+        "stats": {
+          "atk": 2288,
+          "em": 146,
+          "critRate": 33.9,
+          "critDmg": 69.9,
+          "er": 153.7
         }
       }
     ]

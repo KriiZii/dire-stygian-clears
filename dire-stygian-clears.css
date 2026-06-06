@@ -207,6 +207,9 @@ header h1 {
   height: 48px;
   object-fit: contain;
 }
+img[data-char="Traveler"] {
+  transform: scale(1.35);
+}
 .char-icon span {
   font-size: 9px;
   text-align: center;

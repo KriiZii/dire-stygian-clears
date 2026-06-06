@@ -8,7 +8,8 @@ const CHAR_ID_OVERRIDES = {
   'Yanfei':   'Feiyan',
   'Hu Tao':   'Hutao',
   'Ororon':   'Olorun',
-  'Lynette':  'Linette'
+  'Lynette':  'Linette',
+  'Traveler': 'PlayerGirl'
 };
 
 function charIconUrl(name) {
@@ -90,7 +91,7 @@ function buildCharIcons() {
     const div = document.createElement('div');
     div.className = 'char-icon';
     div.dataset.name = name;
-    div.innerHTML = `<img src="${charIconUrl(name)}" onerror="this.style.display='none'"><span>${name}</span>`;
+    div.innerHTML = `<img src="${charIconUrl(name)}" data-char="${name}" onerror="this.style.display='none'"><span>${name}</span>`;
     div.addEventListener('click', () => toggleChar(name));
     container.appendChild(div);
   });
@@ -160,7 +161,7 @@ function characterCard(c) {
         <th colspan="2">
           <div class="char-card-header">
             <div class="char-card-icon">
-              <img src="${charIconUrl(c.name)}" width="48" height="48" onerror="this.style.display='none'">
+              <img src="${charIconUrl(c.name)}" data-char="${c.name}" width="48" height="48" onerror="this.style.display='none'">
               <span>${c.name}</span>
             </div>
             <div class="char-card-meta">

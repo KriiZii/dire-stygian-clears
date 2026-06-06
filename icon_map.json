@@ -48,7 +48,13 @@
     "Tidal Shadow": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Vorpal.webp",
     "Tulaytullah's Remembrance": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Alaya.webp",
     "Wandering Evenstar": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Pleroma.webp",
-    "Wolf's Gravestone": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Wolfmound.webp"
+    "Wolf's Gravestone": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Wolfmound.webp",
+    "Blackmarrow Lantern": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Ilmarinen.webp",
+    "Finale of the Deep": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Vorpal.webp",
+    "Freedom-Sworn": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Widsith.webp",
+    "Sacrificer's Staff": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Krivule.webp",
+    "Sacrificial Jade": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Yue.webp",
+    "Vivid Notions": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_VaresaTransformer.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
