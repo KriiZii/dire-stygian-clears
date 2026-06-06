@@ -1,6 +1,16 @@
 let CLEARS = [];
 
 // ── Rarity ────────────────────────────────────────────────────────────────────
+const STANDARD_5STAR_CHARS = new Set([
+  'Jean', 'Diluc', 'Qiqi', 'Mona', 'Keqing', 'Tighnari', 'Dehya', 'Yumemizuki Mizuki'
+]);
+
+const FREE_CON_5STAR_CHARS = new Set([
+  'Baizhu', 'Wanderer', 'Nilou', 'Tighnari', 'Kamisato Ayato', 'Yae Miko', 'Shenhe',
+  'Arataki Itto', 'Sangonomiya Kokomi', 'Yoimiya', 'Kamisato Ayaka', 'Eula', 'Hu Tao',
+  'Xiao', 'Ganyu', 'Albedo', 'Tartaglia', 'Klee'
+]);
+
 const FOUR_STAR_CHARS = new Set([
   'Aino', 'Amber', 'Barbara', 'Beidou', 'Bennett', 'Candace',
   'Charlotte', 'Chevreuse', 'Chongyun', 'Collei', 'Dahlia', 'Diona',
@@ -15,6 +25,16 @@ const FOUR_STAR_CHARS = new Set([
 
 function is5Star(name) {
   return !FOUR_STAR_CHARS.has(name);
+}
+
+function calcCost(video) {
+  let cost = 0;
+  for (const c of video.characters) {
+    const isLimited = is5Star(c.name) && !STANDARD_5STAR_CHARS.has(c.name) && !FREE_CON_5STAR_CHARS.has(c.name);
+    if (isLimited) cost += 1 + c.constellation;
+    if (SIGNATURE_WEAPONS.has(c.weapon.name)) cost += c.weapon.refinement;
+  }
+  return cost;
 }
 
 const SIGNATURE_WEAPONS = new Set([
@@ -148,19 +168,28 @@ function toggleBoss(boss) {
 // ── Character icon bar ────────────────────────────────────────────────────────
 
 const selectedChars = new Set();
+const selectedWeapons = new Set();
+let activeFilterTab = 'chars';
+let charBarCollapsed = false;
 let c0FilterActive = false;
+let includeStandardActive = false;
+let includeFreeConsActive = false;
 let noSigFilterActive = false;
+let sortBy = 'time';
+let timeSortAscending = true;
+let costSortAscending = true;
+let timeMin = '', timeMax = '', costMin = '', costMax = '';
 
 document.getElementById('charToggle').addEventListener('click', toggleCharBar);
 
 function toggleCharBar() {
-  const icons = document.getElementById('charIcons');
-  const btn = document.getElementById('charToggle');
-  const hidden = icons.style.display === 'none';
-  icons.style.display = hidden ? '' : 'none';
-  document.getElementById('bossIconsSection').style.display = hidden ? '' : 'none';
-  document.getElementById('charIconsDivider').style.display = hidden ? '' : 'none';
-  btn.textContent = hidden ? '▲' : '▼';
+  charBarCollapsed = !charBarCollapsed;
+  document.getElementById('charToggle').textContent = charBarCollapsed ? '▼' : '▲';
+  document.getElementById('bossIconsSection').style.display = charBarCollapsed ? 'none' : '';
+  document.getElementById('charIconsDivider').style.display = charBarCollapsed ? 'none' : '';
+  document.getElementById('charWeaponTabRow').style.display = charBarCollapsed ? 'none' : '';
+  document.getElementById('charIcons').style.display = !charBarCollapsed && activeFilterTab === 'chars' ? '' : 'none';
+  document.getElementById('weaponIcons').style.display = !charBarCollapsed && activeFilterTab === 'weapons' ? '' : 'none';
 }
 
 function buildCharIcons() {
@@ -173,8 +202,9 @@ function buildCharIcons() {
 
   const container = document.getElementById('charIcons');
   names.forEach(name => {
+    selectedChars.add(name);
     const div = document.createElement('div');
-    div.className = 'char-icon';
+    div.className = 'char-icon active';
     div.dataset.name = name;
     div.innerHTML = `<img src="${charIconUrl(name)}" data-char="${name}" onerror="this.style.display='none'"><span>${name}</span>`;
     div.addEventListener('click', () => toggleChar(name));
@@ -182,33 +212,187 @@ function buildCharIcons() {
   });
 }
 
-function toggleChar(name) {
-  if (selectedChars.has(name)) {
-    selectedChars.delete(name);
-  } else {
-    selectedChars.add(name);
+function buildWeaponIcons() {
+  const seen = new Set();
+  const sigs = [], others = [];
+  CLEARS.forEach(v => v.characters.forEach(c => {
+    if (!seen.has(c.weapon.name)) {
+      seen.add(c.weapon.name);
+      (SIGNATURE_WEAPONS.has(c.weapon.name) ? sigs : others).push(c.weapon.name);
+    }
+  }));
+  sigs.sort();
+  others.sort();
+
+  const container = document.getElementById('weaponIcons');
+
+  function addGroup(label, names) {
+    const header = document.createElement('div');
+    header.className = 'weapon-group';
+    header.innerHTML = `<div class="filter-section-label weapon-group-label">${label}</div><div class="weapon-group-icons"></div>`;
+    const iconsDiv = header.querySelector('.weapon-group-icons');
+    names.forEach(name => {
+      selectedWeapons.add(name);
+      const div = document.createElement('div');
+      div.className = 'char-icon active';
+      div.dataset.name = name;
+      const iconUrl = ICON_MAP.weapons[name] || '';
+      div.innerHTML = `<img src="${iconUrl}" onerror="this.style.display='none'"><span>${name}</span>`;
+      div.addEventListener('click', () => toggleWeapon(name));
+      iconsDiv.appendChild(div);
+    });
+    container.appendChild(header);
   }
+
+  addGroup('Signatures', sigs);
+  addGroup('Other', others);
+}
+
+function toggleChar(name) {
+  if (selectedChars.has(name)) selectedChars.delete(name);
+  else selectedChars.add(name);
   document.querySelectorAll('#charIcons .char-icon').forEach(el => {
     el.classList.toggle('active', selectedChars.has(el.dataset.name));
   });
   applyFilter();
 }
 
+function toggleWeapon(name) {
+  if (selectedWeapons.has(name)) selectedWeapons.delete(name);
+  else selectedWeapons.add(name);
+  document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+    el.classList.toggle('active', selectedWeapons.has(el.dataset.name));
+  });
+  applyFilter();
+}
+
+function switchFilterTab(tab) {
+  activeFilterTab = tab;
+  document.querySelectorAll('.filter-tab').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.filterTab === tab);
+  });
+  if (!charBarCollapsed) {
+    document.getElementById('charIcons').style.display = tab === 'chars' ? '' : 'none';
+    document.getElementById('weaponIcons').style.display = tab === 'weapons' ? '' : 'none';
+  }
+  const noSigBtn = document.getElementById('noSigFilterBtn');
+  noSigBtn.style.display = tab === 'weapons' ? '' : 'none';
+  if (tab !== 'weapons' && noSigFilterActive) {
+    noSigFilterActive = false;
+    noSigBtn.classList.remove('active');
+    applyFilter();
+  }
+  const search = document.getElementById('charSearch');
+  search.placeholder = tab === 'chars' ? 'Search characters...' : 'Search weapons...';
+  search.value = '';
+  document.querySelectorAll('#charIcons .char-icon, #weaponIcons .char-icon').forEach(el => el.style.display = '');
+}
+
+document.querySelectorAll('.filter-tab').forEach(btn => {
+  btn.addEventListener('click', () => switchFilterTab(btn.dataset.filterTab));
+});
+
+document.getElementById('selectAllBtn').addEventListener('click', function () {
+  if (activeFilterTab === 'chars') {
+    document.querySelectorAll('#charIcons .char-icon').forEach(el => {
+      selectedChars.add(el.dataset.name);
+      el.classList.add('active');
+    });
+  } else {
+    document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+      selectedWeapons.add(el.dataset.name);
+      el.classList.add('active');
+    });
+  }
+  applyFilter();
+});
+
+document.getElementById('unselectAllBtn').addEventListener('click', function () {
+  if (activeFilterTab === 'chars') {
+    selectedChars.clear();
+    document.querySelectorAll('#charIcons .char-icon').forEach(el => el.classList.remove('active'));
+  } else {
+    selectedWeapons.clear();
+    document.querySelectorAll('#weaponIcons .char-icon').forEach(el => el.classList.remove('active'));
+  }
+  applyFilter();
+});
+
 document.getElementById('c0FilterBtn').addEventListener('click', function () {
   c0FilterActive = !c0FilterActive;
   this.classList.toggle('active', c0FilterActive);
+  const subBtns = document.querySelectorAll('.c0-sub-btn');
+  subBtns.forEach(btn => { btn.style.visibility = c0FilterActive ? 'visible' : 'hidden'; });
+  if (!c0FilterActive) {
+    includeStandardActive = false;
+    includeFreeConsActive = false;
+    document.getElementById('includeStandardBtn').classList.remove('active');
+    document.getElementById('includeFreeConsBtn').classList.remove('active');
+  }
+  applyFilter();
+});
+
+document.getElementById('includeStandardBtn').addEventListener('click', function () {
+  includeStandardActive = !includeStandardActive;
+  this.classList.toggle('active', includeStandardActive);
+  applyFilter();
+});
+
+document.getElementById('includeFreeConsBtn').addEventListener('click', function () {
+  includeFreeConsActive = !includeFreeConsActive;
+  this.classList.toggle('active', includeFreeConsActive);
   applyFilter();
 });
 
 document.getElementById('noSigFilterBtn').addEventListener('click', function () {
   noSigFilterActive = !noSigFilterActive;
   this.classList.toggle('active', noSigFilterActive);
+  document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+    if (SIGNATURE_WEAPONS.has(el.dataset.name)) {
+      if (noSigFilterActive) {
+        selectedWeapons.delete(el.dataset.name);
+        el.classList.remove('active');
+      } else {
+        selectedWeapons.add(el.dataset.name);
+        el.classList.add('active');
+      }
+    }
+  });
   applyFilter();
 });
 
+function updateSortBtns() {
+  document.getElementById('sortTimeBtn').textContent = (timeSortAscending ? '▲' : '▼') + ' Clear Time';
+  document.getElementById('sortCostBtn').textContent = (costSortAscending ? '▲' : '▼') + ' Cost';
+  document.getElementById('sortTimeBtn').classList.toggle('active', sortBy === 'time');
+  document.getElementById('sortCostBtn').classList.toggle('active', sortBy === 'cost');
+}
+
+document.getElementById('sortTimeBtn').addEventListener('click', function () {
+  if (sortBy === 'time') timeSortAscending = !timeSortAscending;
+  else sortBy = 'time';
+  updateSortBtns();
+  applyFilter();
+});
+
+document.getElementById('sortCostBtn').addEventListener('click', function () {
+  if (sortBy === 'cost') costSortAscending = !costSortAscending;
+  else sortBy = 'cost';
+  updateSortBtns();
+  applyFilter();
+});
+
+updateSortBtns();
+
+document.getElementById('timeMin').addEventListener('input', function () { timeMin = this.value; applyFilter(); });
+document.getElementById('timeMax').addEventListener('input', function () { timeMax = this.value; applyFilter(); });
+document.getElementById('costMin').addEventListener('input', function () { costMin = this.value; applyFilter(); });
+document.getElementById('costMax').addEventListener('input', function () { costMax = this.value; applyFilter(); });
+
 document.getElementById('charSearch').addEventListener('input', function () {
   const q = this.value.toLowerCase();
-  document.querySelectorAll('#charIcons .char-icon').forEach(el => {
+  const containerId = activeFilterTab === 'chars' ? '#charIcons' : '#weaponIcons';
+  document.querySelectorAll(`${containerId} .char-icon`).forEach(el => {
     el.style.display = !q || el.dataset.name.toLowerCase().includes(q) ? '' : 'none';
   });
 });
@@ -284,12 +468,28 @@ function renderVideos() {
   container.innerHTML = '';
 
   const filtered = CLEARS.filter(v => {
-    const matchChar = selectedChars.size === 0 || [...selectedChars].some(name => v.characters.some(c => c.name === name));
+    const matchChar = v.characters.every(c => selectedChars.has(c.name));
+    const matchWeapon = v.characters.every(c => selectedWeapons.has(c.weapon.name));
     const matchBoss = !selectedBoss || v.boss === selectedBoss;
-    const matchC0 = !c0FilterActive || v.characters.every(c => !is5Star(c.name) || c.constellation === 0);
-    const matchNoSig = !noSigFilterActive || v.characters.every(c => !SIGNATURE_WEAPONS.has(c.weapon.name));
-    return matchChar && matchBoss && matchC0 && matchNoSig;
-  }).sort((a, b) => parseInt(a.clearTime) - parseInt(b.clearTime));
+    const matchC0 = !c0FilterActive || v.characters.every(c =>
+      !is5Star(c.name) ||
+      c.constellation === 0 ||
+      (includeStandardActive && STANDARD_5STAR_CHARS.has(c.name)) ||
+      (includeFreeConsActive && FREE_CON_5STAR_CHARS.has(c.name))
+    );
+    const time = parseInt(v.clearTime);
+    const cost = calcCost(v);
+    const matchTimeRange = (timeMin === '' || time >= +timeMin) && (timeMax === '' || time <= +timeMax);
+    const matchCostRange = (costMin === '' || cost >= +costMin) && (costMax === '' || cost <= +costMax);
+    return matchChar && matchWeapon && matchBoss && matchC0 && matchTimeRange && matchCostRange;
+  }).sort((a, b) => {
+    if (sortBy === 'cost') {
+      const diff = calcCost(a) - calcCost(b);
+      return costSortAscending ? diff : -diff;
+    }
+    const diff = parseInt(a.clearTime) - parseInt(b.clearTime);
+    return timeSortAscending ? diff : -diff;
+  });
 
   document.getElementById('clearCount').textContent = `${filtered.length} Clears`;
 
@@ -317,27 +517,139 @@ function renderVideos() {
     section.innerHTML = `
       <div class="video-layout">
         ${embed}
-        <p class="video-title"><strong>${video.boss}</strong> - ${video.clearTime}</p>
+        <p class="video-title"><strong>${video.boss}</strong> - ${video.clearTime} - ${calcCost(video)} Cost</p>
         <div class="char-cards-grid">${charCards}</div>
       </div>
     `;
     container.appendChild(section);
   });
+
+  document.querySelectorAll('.char-cards-grid').forEach(grid => {
+    const cards = [...grid.querySelectorAll('.char-card')];
+
+    const ths = cards.map(c => c.querySelector('th'));
+    ths.forEach(el => el.style.height = '');
+    const maxThH = Math.max(...ths.map(el => el.offsetHeight));
+    ths.forEach(el => el.style.height = maxThH + 'px');
+
+    const weaponTds = cards.map(c => c.querySelector('td'));
+    weaponTds.forEach(el => el.style.height = '');
+    const maxTdH = Math.max(...weaponTds.map(el => el.offsetHeight));
+    weaponTds.forEach(el => el.style.height = maxTdH + 'px');
+  });
+}
+
+function saveFilters() {
+  const deselectedChars = [];
+  document.querySelectorAll('#charIcons .char-icon').forEach(el => {
+    if (!selectedChars.has(el.dataset.name)) deselectedChars.push(el.dataset.name);
+  });
+  const deselectedWeapons = [];
+  document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+    if (!selectedWeapons.has(el.dataset.name)) deselectedWeapons.push(el.dataset.name);
+  });
+  localStorage.setItem('filters', JSON.stringify({
+    deselectedChars,
+    deselectedWeapons,
+    boss: selectedBoss,
+    c0: c0FilterActive,
+    includeStandard: includeStandardActive,
+    includeFreeCons: includeFreeConsActive,
+    noSig: noSigFilterActive,
+    sortBy,
+    timeAsc: timeSortAscending,
+    costAsc: costSortAscending,
+    timeMin, timeMax, costMin, costMax,
+  }));
+}
+
+function restoreFilters() {
+  let state;
+  try { state = JSON.parse(localStorage.getItem('filters')); } catch { return; }
+  if (!state) return;
+
+  const deselectedChars = new Set(state.deselectedChars || []);
+  document.querySelectorAll('#charIcons .char-icon').forEach(el => {
+    if (deselectedChars.has(el.dataset.name)) {
+      selectedChars.delete(el.dataset.name);
+      el.classList.remove('active');
+    }
+  });
+
+  const deselectedWeapons = new Set(state.deselectedWeapons || []);
+  document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+    if (deselectedWeapons.has(el.dataset.name)) {
+      selectedWeapons.delete(el.dataset.name);
+      el.classList.remove('active');
+    }
+  });
+
+  if (state.boss) {
+    selectedBoss = state.boss;
+    document.querySelectorAll('#bossIcons .char-icon').forEach(el => {
+      el.classList.toggle('active', el.dataset.boss === selectedBoss);
+    });
+  }
+
+  if (state.c0) {
+    c0FilterActive = true;
+    document.getElementById('c0FilterBtn').classList.add('active');
+    document.querySelectorAll('.c0-sub-btn').forEach(btn => btn.style.visibility = 'visible');
+    if (state.includeStandard) {
+      includeStandardActive = true;
+      document.getElementById('includeStandardBtn').classList.add('active');
+    }
+    if (state.includeFreeCons) {
+      includeFreeConsActive = true;
+      document.getElementById('includeFreeConsBtn').classList.add('active');
+    }
+  }
+
+  if (state.noSig) {
+    noSigFilterActive = true;
+    document.getElementById('noSigFilterBtn').classList.add('active');
+  }
+
+  if (state.sortBy) sortBy = state.sortBy;
+  if (state.timeAsc !== undefined) timeSortAscending = state.timeAsc;
+  if (state.costAsc !== undefined) costSortAscending = state.costAsc;
+  updateSortBtns();
+
+  if (state.timeMin) { timeMin = state.timeMin; document.getElementById('timeMin').value = timeMin; }
+  if (state.timeMax) { timeMax = state.timeMax; document.getElementById('timeMax').value = timeMax; }
+  if (state.costMin) { costMin = state.costMin; document.getElementById('costMin').value = costMin; }
+  if (state.costMax) { costMax = state.costMax; document.getElementById('costMax').value = costMax; }
 }
 
 function applyFilter() {
+  saveFilters();
   renderVideos();
 }
 
 function clearFilter() {
   selectedChars.clear();
+  selectedWeapons.clear();
+  document.querySelectorAll('#charIcons .char-icon').forEach(el => {
+    selectedChars.add(el.dataset.name);
+    el.classList.add('active');
+    el.style.display = '';
+  });
+  document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+    selectedWeapons.add(el.dataset.name);
+    el.classList.add('active');
+    el.style.display = '';
+  });
   selectedBoss = null;
-  c0FilterActive = false;
-  noSigFilterActive = false;
-  document.querySelectorAll('#charIcons .char-icon, #bossIcons .char-icon').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('#bossIcons .char-icon').forEach(el => el.classList.remove('active'));
   document.getElementById('charSearch').value = '';
-  document.querySelectorAll('#charIcons .char-icon').forEach(el => el.style.display = '');
+  c0FilterActive = false;
+  includeStandardActive = false;
+  includeFreeConsActive = false;
+  noSigFilterActive = false;
   document.getElementById('c0FilterBtn').classList.remove('active');
+  document.getElementById('includeStandardBtn').classList.remove('active');
+  document.getElementById('includeFreeConsBtn').classList.remove('active');
+  document.querySelectorAll('.c0-sub-btn').forEach(btn => { btn.style.visibility = 'hidden'; });
   document.getElementById('noSigFilterBtn').classList.remove('active');
   renderVideos();
 }
@@ -393,5 +705,7 @@ Promise.all([
 }).finally(() => {
   buildBossIcons();
   buildCharIcons();
+  buildWeaponIcons();
+  restoreFilters();
   renderVideos();
 });

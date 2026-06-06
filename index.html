@@ -30,10 +30,10 @@
 
 <div id="charBar">
   <div id="charSearchRow">
-    <input type="text" id="charSearch" placeholder="Search characters...">
-    <button id="charToggle">&#9650;</button>
-    <button id="c0FilterBtn" class="header-badge">C0 5&#9733; only</button>
-    <button id="noSigFilterBtn" class="header-badge">No Signatures</button>
+    <div id="charSearchInner">
+      <input type="text" id="charSearch" placeholder="Search characters...">
+      <button id="charToggle">&#9650;</button>
+    </div>
   </div>
   <div id="filterIcons">
     <div id="bossIconsSection">
@@ -42,8 +42,37 @@
     </div>
     <div id="charIconsDivider"></div>
     <div id="charIconsSection">
+      <div id="charWeaponTabRow">
+        <button class="header-badge filter-tab active" data-filter-tab="chars">Characters</button>
+        <button class="header-badge filter-tab" data-filter-tab="weapons">Weapons</button>
+        <button id="c0FilterBtn" class="header-badge">C0 5&#9733; only</button>
+        <button id="includeStandardBtn" class="header-badge c0-sub-btn" style="visibility:hidden">Include Standard</button>
+        <button id="includeFreeConsBtn" class="header-badge c0-sub-btn" style="visibility:hidden">Include Free Cons</button>
+        <div id="charTabRightBtns">
+          <button id="noSigFilterBtn" class="header-badge" style="display:none">No Signatures</button>
+          <button id="selectAllBtn" class="header-badge">Select All</button>
+          <button id="unselectAllBtn" class="header-badge">Unselect All</button>
+        </div>
+      </div>
       <div id="charIcons"></div>
+      <div id="weaponIcons" style="display:none"></div>
     </div>
+  </div>
+</div>
+
+<div id="sortRow">
+  <div class="sort-group">
+    <button id="sortTimeBtn" class="header-badge">&#9650; Clear Time</button>
+    <input type="number" id="timeMin" class="range-input" placeholder="Min" min="0">
+    <span class="range-sep">–</span>
+    <input type="number" id="timeMax" class="range-input" placeholder="Max" min="0">
+    <span class="range-unit">s</span>
+  </div>
+  <div class="sort-group">
+    <button id="sortCostBtn" class="header-badge">&#9650; Cost</button>
+    <input type="number" id="costMin" class="range-input" placeholder="Min" min="0">
+    <span class="range-sep">–</span>
+    <input type="number" id="costMax" class="range-input" placeholder="Max" min="0">
   </div>
 </div>
 

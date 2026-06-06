@@ -6,7 +6,7 @@
   --border-hover: #666;
   --surface: #2e2e2e;
   --surface-alt: #252538;
-  --active-border: #4a90e2;
+  --active-border: #9ac2f0;
   --active-bg: #1a3050;
 }
 body.light {
@@ -137,14 +137,19 @@ header h1 {
 #charBar {
   padding: 12px 0;
   border-bottom: 1px solid var(--border);
-  margin-bottom: 20px;
 }
 #charSearchRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+#charSearchInner {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 6px;
-  margin-bottom: 10px;
 }
 #charSearch {
   padding: 4px 8px;
@@ -198,8 +203,45 @@ header h1 {
 }
 #charIconsSection {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
-#charIcons {
+#charWeaponTabRow {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.filter-tab.active {
+  border-color: var(--active-border);
+  background: var(--active-bg);
+}
+.filter-tab,
+#selectAllBtn,
+#unselectAllBtn {
+  cursor: pointer;
+}
+#charTabRightBtns {
+  display: flex;
+  gap: 6px;
+  margin-left: auto;
+}
+#charIcons,
+#weaponIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+.weapon-group {
+  width: 100%;
+}
+.weapon-group-label {
+  margin-bottom: 6px;
+}
+.weapon-group-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
@@ -330,11 +372,13 @@ img[data-char="Traveler"] {
   cursor: pointer;
 }
 #c0FilterBtn,
-#noSigFilterBtn {
+#noSigFilterBtn,
+.c0-sub-btn {
   cursor: pointer;
 }
 #c0FilterBtn.active,
-#noSigFilterBtn.active {
+#noSigFilterBtn.active,
+.c0-sub-btn.active {
   border-color: var(--active-border);
   background: var(--active-bg);
 }
@@ -349,6 +393,53 @@ input[type="text"] {
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 2px 6px;
+}
+#sortRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+.sort-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.range-input {
+  width: 56px;
+  padding: 2px 6px;
+  font-size: 0.9em;
+  font-family: inherit;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.range-input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.range-sep,
+.range-unit {
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+#sortTimeBtn,
+#sortCostBtn {
+  cursor: pointer;
+}
+#sortTimeBtn.active,
+#sortCostBtn.active {
+  border-color: var(--active-border);
+  background: var(--active-bg);
 }
 footer {
   margin-top: 40px;
