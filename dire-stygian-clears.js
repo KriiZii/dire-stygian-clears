@@ -202,11 +202,13 @@ function renderVideos() {
   filtered.forEach(video => {
     const videoId = extractVideoId(video.url);
     const embed = videoId
-      ? `<div class="video-wrapper"><div class="video-embed-placeholder"
-             onclick="loadVideo(this, '${videoId}')">
-           <img src="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg" width="560" height="315" class="video-thumb">
-           <div class="video-play-btn">&#9654; View Video</div>
-         </div></div>`
+      ? `${video.author ? `<p class="video-author">${video.author}</p>` : ''}
+         <div class="video-wrapper">
+           <div class="video-embed-placeholder" onclick="loadVideo(this, '${videoId}')">
+             <img src="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg" width="560" height="315" class="video-thumb">
+             <div class="video-play-btn">&#9654; View Video</div>
+           </div>
+         </div>`
       : `<a href="${video.url}" target="_blank">${video.url}</a>`;
 
     const charCards = video.characters.map(c => `<div class="char-card-wrap">${characterCard(c)}</div>`).join('');
@@ -214,9 +216,9 @@ function renderVideos() {
     const section = document.createElement('div');
     section.className = 'video-section';
     section.innerHTML = `
-      <p class="video-title"><strong>${video.boss}</strong> - ${video.clearTime}</p>
       <div class="video-layout">
         ${embed}
+        <p class="video-title"><strong>${video.boss}</strong> - ${video.clearTime}</p>
         <div class="char-cards-grid">${charCards}</div>
       </div>
     `;
