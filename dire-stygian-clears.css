@@ -101,12 +101,16 @@ header h1 {
   font-size: 1.4em;
 }
 #byline {
+  flex: 1;
   font-size: 0.8em;
   color: var(--text-muted);
+  text-align: left;
 }
 #filters {
+  flex: 1;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 10px;
 }
 #charBar {
@@ -282,8 +286,7 @@ header h1 {
   font-size: 0.85em;
   color: var(--text-muted);
 }
-#themeToggle {
-  cursor: pointer;
+.header-badge {
   background: none;
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -291,6 +294,11 @@ header h1 {
   font-size: 0.9em;
   line-height: 1.6;
   color: var(--text);
+  font-family: inherit;
+  white-space: nowrap;
+}
+#themeToggle {
+  cursor: pointer;
 }
 input[type="text"] {
   background: var(--surface);

@@ -72,6 +72,8 @@ function toggleCharBar() {
   const btn = document.getElementById('charToggle');
   const hidden = icons.style.display === 'none';
   icons.style.display = hidden ? '' : 'none';
+  document.getElementById('bossIconsSection').style.display = hidden ? '' : 'none';
+  document.getElementById('charIconsDivider').style.display = hidden ? '' : 'none';
   btn.textContent = hidden ? '▲' : '▼';
 }
 
@@ -187,7 +189,9 @@ function renderVideos() {
     const matchChar = selectedChars.size === 0 || [...selectedChars].some(name => v.characters.some(c => c.name === name));
     const matchBoss = !selectedBoss || v.boss === selectedBoss;
     return matchChar && matchBoss;
-  });
+  }).sort((a, b) => parseInt(a.clearTime) - parseInt(b.clearTime));
+
+  document.getElementById('clearCount').textContent = `${filtered.length} Clears`;
 
   if (filtered.length === 0) {
     container.innerHTML = '<p>No videos found.</p>';
