@@ -1,6 +1,7 @@
 [
   {
     "url": "https://www.youtube.com/watch?v=ANLvlhJuofI",
+    "author": "Rylei",
     "boss": "Glacial Wolf",
     "clearTime": "120s",
     "characters": [
@@ -20,6 +21,11 @@
         },
         "artifacts": [
           "Long Night's Oath"
+        ],
+        "mainStats": [
+          "EM",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 2138,
@@ -46,6 +52,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "ER",
+          "Hydro%",
+          "Heal%"
+        ],
         "stats": {
           "hp": 29435,
           "critRate": -92.5,
@@ -70,6 +81,11 @@
         },
         "artifacts": [
           "Viridescent Venerer"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
         ],
         "stats": {
           "atk": 3903,
@@ -96,6 +112,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "hp": 18886,
           "critRate": 76.5,
@@ -103,11 +124,11 @@
           "er": 298
         }
       }
-    ],
-    "author": "Rylei"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=k2umoO2MUPw",
+    "author": "Latzero",
     "boss": "Tulpa",
     "clearTime": "118s",
     "characters": [
@@ -127,6 +148,11 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [
+          "EM",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 1485,
@@ -153,6 +179,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 2506,
           "critRate": 12.4,
@@ -176,6 +207,11 @@
         },
         "artifacts": [
           "Noblesse Oblige"
+        ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CR"
         ],
         "stats": {
           "hp": 27314,
@@ -201,6 +237,11 @@
         "artifacts": [
           "Song of Days Past"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "HP%"
+        ],
         "stats": {
           "hp": 42909,
           "critRate": 21.7,
@@ -208,11 +249,11 @@
           "er": 152
         }
       }
-    ],
-    "author": "Latzero"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=IBiX_4Ajwv8",
+    "author": "サン San",
     "boss": "Glacial Wolf",
     "clearTime": "119s",
     "characters": [
@@ -232,6 +273,11 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 2740,
@@ -258,6 +304,11 @@
         "artifacts": [
           "Celestial Gift"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CR"
+        ],
         "stats": {
           "atk": 1277,
           "critRate": 66.8,
@@ -281,6 +332,11 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
         ],
         "stats": {
           "atk": 2414,
@@ -306,6 +362,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "critRate": 14.7,
           "critDmg": 85,
@@ -313,11 +374,11 @@
           "em": 936
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=OAteXNenRxc",
+    "author": "OSECOSE",
     "boss": "Glacial Wolf",
     "clearTime": "119s",
     "characters": [
@@ -337,6 +398,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CD"
         ],
         "stats": {
           "atk": 2789,
@@ -363,6 +429,11 @@
         "artifacts": [
           "Tenacity of the Millelith"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "atk": 2383,
           "critRate": 90.7,
@@ -387,6 +458,11 @@
         },
         "artifacts": [
           "Silken Moon's Serenade"
+        ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "CR"
         ],
         "stats": {
           "hp": 39988,
@@ -413,6 +489,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "critRate": 20.6,
           "critDmg": 93.5,
@@ -420,11 +501,11 @@
           "em": 948
         }
       }
-    ],
-    "author": "OSECOSE"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=OAteXNenRxc",
+    "author": "OSECOSE",
     "boss": "Tulpa",
     "clearTime": "120s",
     "characters": [
@@ -444,6 +525,11 @@
         },
         "artifacts": [
           "Fragment of Harmonic Whimsy"
+        ],
+        "mainStats": [
+          "EM",
+          "Pyro%",
+          "CR"
         ],
         "stats": {
           "atk": 1838,
@@ -470,6 +556,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "EM",
+          "Pyro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1970,
           "critRate": 68.4,
@@ -495,6 +586,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "critRate": 10.6,
           "critDmg": 87.8,
@@ -519,6 +615,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "ER",
+          "Pyro%",
+          "CR"
+        ],
         "stats": {
           "hp": 17685,
           "critRate": 66.8,
@@ -526,11 +627,11 @@
           "er": 260.9
         }
       }
-    ],
-    "author": "OSECOSE"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=OAteXNenRxc",
+    "author": "OSECOSE",
     "boss": "Watcher",
     "clearTime": "120s",
     "characters": [
@@ -550,6 +651,11 @@
         },
         "artifacts": [
           "Finale of the Deep Galleries"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Cryo%",
+          "CR"
         ],
         "stats": {
           "atk": 2332,
@@ -575,6 +681,11 @@
         "artifacts": [
           "Tenacity of the Millelith"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CR"
+        ],
         "stats": {
           "hp": 33704,
           "critRate": 84.9,
@@ -598,6 +709,11 @@
         },
         "artifacts": [
           "Noblesse Oblige"
+        ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "CR"
         ],
         "stats": {
           "atk": 1496,
@@ -623,6 +739,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "ER",
+          "Cryo%",
+          "CR"
+        ],
         "stats": {
           "atk": 1472,
           "critRate": 87.6,
@@ -630,11 +751,11 @@
           "er": 206.2
         }
       }
-    ],
-    "author": "OSECOSE"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=E6lRzKVyrlM",
+    "author": "サン San",
     "boss": "Tulpa",
     "clearTime": "112s",
     "characters": [
@@ -654,6 +775,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "DEF%",
+          "DEF%",
+          "CD"
         ],
         "stats": {
           "def": 2753,
@@ -680,6 +806,11 @@
         "artifacts": [
           "Husk of Opulent Dreams"
         ],
+        "mainStats": [
+          "DEF%",
+          "DEF%",
+          "DEF%"
+        ],
         "stats": {
           "def": 2892,
           "critRate": 74.4,
@@ -704,6 +835,11 @@
         },
         "artifacts": [
           "Instructor"
+        ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
         ],
         "stats": {
           "hp": 14021,
@@ -730,6 +866,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "def": 960,
           "critRate": 24.8,
@@ -738,11 +879,11 @@
           "em": 979
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=iu_VOxpzHZo",
+    "author": "サン San",
     "boss": "Watcher",
     "clearTime": "114s",
     "characters": [
@@ -762,6 +903,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "DEF%",
+          "DEF%",
+          "CD"
         ],
         "stats": {
           "def": 2816,
@@ -788,6 +934,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CD"
+        ],
         "stats": {
           "hp": 39816,
           "critRate": 73.6,
@@ -812,6 +963,11 @@
         },
         "artifacts": [
           "Instructor"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
         ],
         "stats": {
           "atk": 1636,
@@ -838,6 +994,11 @@
         "artifacts": [
           "Husk of Opulent Dreams"
         ],
+        "mainStats": [
+          "DEF%",
+          "DEF%",
+          "DEF%"
+        ],
         "stats": {
           "def": 2892,
           "critRate": 74.4,
@@ -846,11 +1007,11 @@
           "em": 291
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=LVwox-xzP-A",
+    "author": "Minimalist",
     "boss": "Glacial Wolf",
     "clearTime": "78s",
     "characters": [
@@ -870,6 +1031,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CD"
         ],
         "stats": {
           "atk": 2550,
@@ -896,6 +1062,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "atk": 2396,
           "critRate": 88.4,
@@ -920,6 +1091,11 @@
         },
         "artifacts": [
           "Aubade of Morningstar and Moon"
+        ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CR"
         ],
         "stats": {
           "hp": 33020,
@@ -946,6 +1122,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "critRate": 25.2,
           "critDmg": 73.3,
@@ -953,11 +1134,11 @@
           "em": 862
         }
       }
-    ],
-    "author": "Minimalist"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=eSTO8VgfN3w",
+    "author": "サン San",
     "boss": "Glacial Wolf",
     "clearTime": "108s",
     "characters": [
@@ -977,6 +1158,11 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 2388,
@@ -1003,6 +1189,11 @@
         "artifacts": [
           "Celestial Gift"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CD"
+        ],
         "stats": {
           "atk": 1070,
           "critRate": 44.3,
@@ -1026,6 +1217,11 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
         ],
         "stats": {
           "atk": 2414,
@@ -1051,6 +1247,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "critRate": 17.8,
           "critDmg": 85,
@@ -1058,11 +1259,11 @@
           "em": 936
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=eSTO8VgfN3w",
+    "author": "サン San",
     "boss": "Tulpa",
     "clearTime": "112s",
     "characters": [
@@ -1082,6 +1283,11 @@
         },
         "artifacts": [
           "Finale of the Deep Galleries"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Cryo%",
+          "CD"
         ],
         "stats": {
           "atk": 2211,
@@ -1107,6 +1313,11 @@
         "artifacts": [
           "Tenacity of the Millelith"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CR"
+        ],
         "stats": {
           "hp": 33973,
           "critRate": 87.6,
@@ -1130,6 +1341,11 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [
+          "ER",
+          "EM",
+          "EM"
         ],
         "stats": {
           "critRate": 31.4,
@@ -1155,6 +1371,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "atk": 2115,
           "critRate": 79.4,
@@ -1162,11 +1383,11 @@
           "er": 170.1
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=eSTO8VgfN3w",
+    "author": "サン San",
     "boss": "Watcher",
     "clearTime": "112s",
     "characters": [
@@ -1186,6 +1407,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "CD"
         ],
         "stats": {
           "atk": 1315,
@@ -1212,6 +1438,11 @@
         "artifacts": [
           "Deepwood Memories"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "atk": 1362,
           "em": 991,
@@ -1237,6 +1468,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "CD"
+        ],
         "stats": {
           "hp": 38275,
           "critRate": 73.6,
@@ -1261,6 +1497,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "hp": 16178,
           "critRate": 54.5,
@@ -1268,11 +1509,11 @@
           "er": 231.2
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=ZfSP8ROkC5k",
+    "author": "Karon",
     "boss": "Glacial Wolf",
     "clearTime": "113s",
     "characters": [
@@ -1292,6 +1533,11 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [
+          "EM",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 1830,
@@ -1318,6 +1564,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "em": 162,
           "critRate": 93.3,
@@ -1341,6 +1592,11 @@
         },
         "artifacts": [
           "Noblesse Oblige"
+        ],
+        "mainStats": [
+          "ER",
+          "Pyro%",
+          "ATK%"
         ],
         "stats": {
           "hp": 17828,
@@ -1366,6 +1622,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "ER",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 532,
           "critRate": 8.1,
@@ -1373,11 +1634,11 @@
           "er": 219.2
         }
       }
-    ],
-    "author": "Karon"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=ZfSP8ROkC5k",
+    "author": "Karon",
     "boss": "Tulpa",
     "clearTime": "119s",
     "characters": [
@@ -1397,6 +1658,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "DEF%",
+          "DEF%",
+          "CD"
         ],
         "stats": {
           "def": 2979,
@@ -1423,6 +1689,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "def": 792,
           "em": 956,
@@ -1447,6 +1718,11 @@
         },
         "artifacts": [
           "Aubade of Morningstar and Moon"
+        ],
+        "mainStats": [
+          "DEF%",
+          "DEF%",
+          "CD"
         ],
         "stats": {
           "def": 2515,
@@ -1473,6 +1749,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "hp": 11370,
           "em": 125,
@@ -1481,11 +1762,11 @@
           "er": 206.9
         }
       }
-    ],
-    "author": "Karon"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=ZfSP8ROkC5k",
+    "author": "Karon",
     "boss": "Watcher",
     "clearTime": "118s",
     "characters": [
@@ -1505,6 +1786,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "CD"
         ],
         "stats": {
           "atk": 1221,
@@ -1531,6 +1817,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CD"
+        ],
         "stats": {
           "hp": 38569,
           "em": 54,
@@ -1555,6 +1846,11 @@
         },
         "artifacts": [
           "Deepwood Memories"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
         ],
         "stats": {
           "atk": 1182,
@@ -1581,6 +1877,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "atk": 1134,
           "em": 127,
@@ -1589,11 +1890,11 @@
           "er": 141.6
         }
       }
-    ],
-    "author": "Karon"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=Y6mSAHaweSk",
+    "author": "Lil Dyl",
     "boss": "Glacial Wolf",
     "clearTime": "119s",
     "characters": [
@@ -1613,6 +1914,11 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [
+          "EM",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 1862,
@@ -1639,6 +1945,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "ER",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 402,
           "critRate": 52.8,
@@ -1662,6 +1973,11 @@
         },
         "artifacts": [
           "Viridescent Venerer"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
         ],
         "stats": {
           "em": 520,
@@ -1687,6 +2003,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "Heal%"
+        ],
         "stats": {
           "hp": 23731,
           "critRate": 70.3,
@@ -1694,11 +2015,11 @@
           "er": 290.9
         }
       }
-    ],
-    "author": "Lil Dyl"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=nWDwP9SQjVM",
+    "author": "qosole",
     "boss": "Glacial Wolf",
     "clearTime": "119s",
     "characters": [
@@ -1718,6 +2039,11 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 2309,
@@ -1744,6 +2070,11 @@
         "artifacts": [
           "Celestial Gift"
         ],
+        "mainStats": [
+          "ER",
+          "Pyro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1312,
           "critRate": 63.7,
@@ -1767,6 +2098,11 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
         ],
         "stats": {
           "atk": 2307,
@@ -1792,6 +2128,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 911,
           "critRate": 8.5,
@@ -1799,11 +2140,11 @@
           "er": 177.1
         }
       }
-    ],
-    "author": "qosole"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=nWDwP9SQjVM",
+    "author": "qosole",
     "boss": "Tulpa",
     "clearTime": "112s",
     "characters": [
@@ -1823,6 +2164,11 @@
         },
         "artifacts": [
           "Fragment of Harmonic Whimsy"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CR"
         ],
         "stats": {
           "atk": 1649,
@@ -1849,6 +2195,11 @@
         "artifacts": [
           "Song of Days Past"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "HP%"
+        ],
         "stats": {
           "hp": 40491,
           "critRate": 41.2,
@@ -1872,6 +2223,11 @@
         },
         "artifacts": [
           "Tenacity of the Millelith"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
         ],
         "stats": {
           "atk": 1652,
@@ -1897,6 +2253,11 @@
         "artifacts": [
           "Celestial Gift"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 2743,
           "critRate": 20.9,
@@ -1904,11 +2265,11 @@
           "er": 148.5
         }
       }
-    ],
-    "author": "qosole"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=nWDwP9SQjVM",
+    "author": "qosole",
     "boss": "Watcher",
     "clearTime": "116s",
     "characters": [
@@ -1928,6 +2289,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "CD"
         ],
         "stats": {
           "atk": 708,
@@ -1954,6 +2320,11 @@
         "artifacts": [
           "Deepwood Memories"
         ],
+        "mainStats": [
+          "ER",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "atk": 1127,
           "em": 1038,
@@ -1978,6 +2349,11 @@
         },
         "artifacts": [
           "Silken Moon's Serenade"
+        ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "CD"
         ],
         "stats": {
           "hp": 36621,
@@ -2004,6 +2380,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "HP%"
+        ],
         "stats": {
           "hp": 28523,
           "critRate": 8.5,
@@ -2011,11 +2392,11 @@
           "er": 255.3
         }
       }
-    ],
-    "author": "qosole"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=0TXpL0RsP4c",
+    "author": "TacticalNuke",
     "boss": "Glacial Wolf",
     "clearTime": "114s",
     "characters": [
@@ -2035,6 +2416,11 @@
         },
         "artifacts": [
           "Fragment of Harmonic Whimsy"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 2211,
@@ -2061,6 +2447,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 969,
           "critRate": 20.9,
@@ -2084,6 +2475,11 @@
         },
         "artifacts": [
           "Celestial Gift"
+        ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "CR"
         ],
         "stats": {
           "atk": 1565,
@@ -2109,6 +2505,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "ER",
+          "Dendro%",
+          "CD"
+        ],
         "stats": {
           "hp": 19356,
           "critRate": 22.9,
@@ -2116,11 +2517,11 @@
           "er": 306.3
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=jAnTAk4t7HU",
+    "author": "Cavernman",
     "boss": "Tulpa",
     "clearTime": "118s",
     "characters": [
@@ -2140,6 +2541,11 @@
         },
         "artifacts": [
           "Crimson Witch of Flames"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 1877,
@@ -2166,6 +2572,11 @@
         "artifacts": [
           "Celestial Gift"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 3322,
           "critRate": 19.8,
@@ -2189,6 +2600,11 @@
         },
         "artifacts": [
           "Golden Troupe"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Electro%",
+          "CR"
         ],
         "stats": {
           "atk": 1908,
@@ -2214,6 +2630,11 @@
         "artifacts": [
           "Song of Days Past"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "HP%"
+        ],
         "stats": {
           "hp": 35933,
           "critRate": 25.6,
@@ -2221,11 +2642,11 @@
           "er": 149.2
         }
       }
-    ],
-    "author": "Cavernman"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=lKKMVkFJU1s",
+    "author": "TacticalNuke",
     "boss": "Glacial Wolf",
     "clearTime": "99s",
     "characters": [
@@ -2245,6 +2666,11 @@
         },
         "artifacts": [
           "Fragment of Harmonic Whimsy"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 2353,
@@ -2271,6 +2697,11 @@
         "artifacts": [
           "Celestial Gift"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 3019,
           "critRate": 21.3,
@@ -2294,6 +2725,11 @@
         },
         "artifacts": [
           "Noblesse Oblige"
+        ],
+        "mainStats": [
+          "ER",
+          "Dendro%",
+          "CD"
         ],
         "stats": {
           "hp": 18054,
@@ -2319,6 +2755,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "ER",
+          "Anemo%",
+          "CR"
+        ],
         "stats": {
           "atk": 1101,
           "em": 86,
@@ -2327,11 +2768,11 @@
           "er": 270.7
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=EtDb60UBoPc",
+    "author": "TacticalNuke",
     "boss": "Watcher",
     "clearTime": "120s",
     "characters": [
@@ -2351,6 +2792,11 @@
         },
         "artifacts": [
           "Fragment of Harmonic Whimsy"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 18780,
@@ -2377,6 +2823,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "ER",
+          "Dendro%",
+          "CD"
+        ],
         "stats": {
           "hp": 19356,
           "critRate": 22.9,
@@ -2400,6 +2851,11 @@
         },
         "artifacts": [
           "Celestial Gift"
+        ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "CR"
         ],
         "stats": {
           "atk": 1565,
@@ -2425,6 +2881,11 @@
         "artifacts": [
           "Tenacity of the Millelith"
         ],
+        "mainStats": [
+          "ATK%",
+          "Electro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1749,
           "critRate": 69.2,
@@ -2432,11 +2893,11 @@
           "er": 194.9
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=ORa5RXdCty0",
+    "author": "I Play What I Love | Danny",
     "boss": "Tulpa",
     "clearTime": "79s",
     "characters": [
@@ -2456,6 +2917,11 @@
         },
         "artifacts": [
           "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CD"
         ],
         "stats": {
           "atk": 2716,
@@ -2480,6 +2946,11 @@
         },
         "artifacts": [
           "Tenacity of the Millelith"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
         ],
         "stats": {
           "atk": 2521,
@@ -2506,6 +2977,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 2674,
           "critRate": 37.3,
@@ -2530,6 +3006,11 @@
         "artifacts": [
           "Celestial Gift"
         ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 2938,
           "critRate": 33.4,
@@ -2537,11 +3018,11 @@
           "er": 216.5
         }
       }
-    ],
-    "author": "I Play What I Love | Danny"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=ORa5RXdCty0",
+    "author": "I Play What I Love | Danny",
     "boss": "Glacial Wolf",
     "clearTime": "63s",
     "characters": [
@@ -2561,6 +3042,11 @@
         },
         "artifacts": [
           "Desert Pavilion Chronicle"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Anemo%",
+          "CR"
         ],
         "stats": {
           "atk": 1934,
@@ -2586,6 +3072,11 @@
         "artifacts": [
           "Tenacity of the Millelith"
         ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "critRate": 73.4,
           "critDmg": 91.9,
@@ -2608,6 +3099,11 @@
         },
         "artifacts": [
           "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
         ],
         "stats": {
           "atk": 2136,
@@ -2634,6 +3130,11 @@
         "artifacts": [
           "Celestial Gift"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 4395,
           "critRate": 8.1,
@@ -2641,11 +3142,11 @@
           "er": 173.1
         }
       }
-    ],
-    "author": "I Play What I Love | Danny"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=ORa5RXdCty0",
+    "author": "I Play What I Love | Danny",
     "boss": "Watcher",
     "clearTime": "115s",
     "characters": [
@@ -2665,6 +3166,11 @@
         },
         "artifacts": [
           "Marechaussee Hunter"
+        ],
+        "mainStats": [
+          "HP%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "hp": 34724,
@@ -2691,6 +3197,11 @@
         "artifacts": [
           "Golden Troupe"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CR"
+        ],
         "stats": {
           "hp": 47970,
           "critRate": 88.7,
@@ -2714,6 +3225,11 @@
         },
         "artifacts": [
           "Emblem of Severed Fate"
+        ],
+        "mainStats": [
+          "ER",
+          "Hydro%",
+          "CR"
         ],
         "stats": {
           "hp": 22232,
@@ -2739,6 +3255,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "ER",
+          "DEF%",
+          "DEF%"
+        ],
         "stats": {
           "def": 3443,
           "critRate": 48.9,
@@ -2746,11 +3267,11 @@
           "er": 186.1
         }
       }
-    ],
-    "author": "I Play What I Love | Danny"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=ZVzL_lh_okQ",
+    "author": "サン San",
     "boss": "Tulpa",
     "clearTime": "113s",
     "characters": [
@@ -2770,6 +3291,11 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [
+          "EM",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 1781,
@@ -2796,6 +3322,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 2242,
           "critRate": 42.7,
@@ -2819,6 +3350,11 @@
         },
         "artifacts": [
           "Gilded Dreams"
+        ],
+        "mainStats": [
+          "ER",
+          "Electro%",
+          "CR"
         ],
         "stats": {
           "atk": 1492,
@@ -2844,6 +3380,11 @@
         "artifacts": [
           "Song of Days Past"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "Heal%"
+        ],
         "stats": {
           "hp": 41377,
           "critRate": 15.1,
@@ -2851,11 +3392,11 @@
           "er": 142.8
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=7yIK3yIdxHE",
+    "author": "サン San",
     "boss": "Tulpa",
     "clearTime": "109s",
     "characters": [
@@ -2875,6 +3416,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CD"
         ],
         "stats": {
           "atk": 2498,
@@ -2901,6 +3447,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "atk": 2349,
           "em": 63,
@@ -2925,6 +3476,11 @@
         },
         "artifacts": [
           "Noblesse Oblige"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CR"
         ],
         "stats": {
           "atk": 2164,
@@ -2951,6 +3507,11 @@
         "artifacts": [
           "Song of Days Past"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "CR"
+        ],
         "stats": {
           "hp": 38034,
           "critRate": 46.2,
@@ -2958,11 +3519,11 @@
           "er": 168.2
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=cbWMNVXiCo0",
+    "author": "サン San",
     "boss": "Watcher",
     "clearTime": "116s",
     "characters": [
@@ -2982,6 +3543,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "CD"
         ],
         "stats": {
           "atk": 1219,
@@ -3007,6 +3573,11 @@
         },
         "artifacts": [
           "Deepwood Memories"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
         ],
         "stats": {
           "atk": 1362,
@@ -3033,6 +3604,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "CD"
+        ],
         "stats": {
           "hp": 38275,
           "critRate": 73.6,
@@ -3057,6 +3633,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "hp": 17548,
           "critRate": 54.5,
@@ -3064,11 +3645,11 @@
           "er": 232.7
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=rRMLtURaf7U",
+    "author": "サン San",
     "boss": "Tulpa",
     "clearTime": "118s",
     "characters": [
@@ -3088,6 +3669,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "CD"
         ],
         "stats": {
           "atk": 1219,
@@ -3114,6 +3700,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "atk": 1311,
           "em": 977,
@@ -3139,6 +3730,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "ATK%",
+          "Electro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1421,
           "critRate": 59.7,
@@ -3163,6 +3759,11 @@
         "artifacts": [
           "Deepwood Memories"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 897,
           "critRate": 27.9,
@@ -3170,11 +3771,11 @@
           "er": 155.7
         }
       }
-    ],
-    "author": "サン San"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=74LIuPnnQq8",
+    "author": "TacticalNuke",
     "boss": "Glacial Wolf",
     "clearTime": "112s",
     "characters": [
@@ -3194,6 +3795,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "CD"
         ],
         "stats": {
           "atk": 1314,
@@ -3220,6 +3826,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 799,
           "critRate": 12.4,
@@ -3243,6 +3854,11 @@
         },
         "artifacts": [
           "Silken Moon's Serenade"
+        ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "HP%"
         ],
         "stats": {
           "hp": 40318,
@@ -3269,6 +3885,11 @@
         "artifacts": [
           "Deepwood Memories"
         ],
+        "mainStats": [
+          "ER",
+          "Electro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1247,
           "critRate": 68.8,
@@ -3276,11 +3897,11 @@
           "er": 221.9
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=Jmr2fSgBA3o",
+    "author": "TacticalNuke",
     "boss": "Watcher",
     "clearTime": "109s",
     "characters": [
@@ -3300,6 +3921,11 @@
         },
         "artifacts": [
           "Long Night's Oath"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Electro%",
+          "CR"
         ],
         "stats": {
           "atk": 2623,
@@ -3324,6 +3950,11 @@
         },
         "artifacts": [
           "Noblesse Oblige"
+        ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CR"
         ],
         "stats": {
           "hp": 16608,
@@ -3350,6 +3981,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CR"
+        ],
         "stats": {
           "atk": 2321,
           "critRate": 51.7,
@@ -3374,6 +4010,11 @@
         "artifacts": [
           "Song of Days Past"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "HP%"
+        ],
         "stats": {
           "hp": 42134,
           "critRate": 29.5,
@@ -3381,11 +4022,11 @@
           "er": 144.1
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=7YizpzXI9uk",
+    "author": "TacticalNuke",
     "boss": "Glacial Wolf",
     "clearTime": "115s",
     "characters": [
@@ -3405,6 +4046,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "CD"
         ],
         "stats": {
           "atk": 2437,
@@ -3431,6 +4077,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 922,
           "critRate": 28.3,
@@ -3454,6 +4105,11 @@
         },
         "artifacts": [
           "Silken Moon's Serenade"
+        ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "CD"
         ],
         "stats": {
           "hp": 37538,
@@ -3480,6 +4136,11 @@
         "artifacts": [
           "Tenacity of the Millelith"
         ],
+        "mainStats": [
+          "ATK%",
+          "Electro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1749,
           "critRate": 69.2,
@@ -3487,11 +4148,11 @@
           "er": 194.9
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=bVKo0XPKDJQ",
+    "author": "TacticalNuke",
     "boss": "Tulpa",
     "clearTime": "48s",
     "characters": [
@@ -3511,6 +4172,11 @@
         },
         "artifacts": [
           "Fragment of Harmonic Whimsy"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 2193,
@@ -3537,6 +4203,11 @@
         "artifacts": [
           "Tenacity of the Millelith"
         ],
+        "mainStats": [
+          "ER",
+          "Electro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1396,
           "critRate": 77.3,
@@ -3560,6 +4231,11 @@
         },
         "artifacts": [
           "Celestial Gift"
+        ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
         ],
         "stats": {
           "atk": 3019,
@@ -3585,6 +4261,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "HP%"
+        ],
         "stats": {
           "hp": 40312,
           "critRate": 24.1,
@@ -3592,11 +4273,11 @@
           "er": 197.2
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=L2ErHEpJook",
+    "author": "TacticalNuke",
     "boss": "Tulpa",
     "clearTime": "117s",
     "characters": [
@@ -3616,6 +4297,11 @@
         },
         "artifacts": [
           "Finale of the Deep Galleries"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Cryo%",
+          "CR"
         ],
         "stats": {
           "atk": 2168,
@@ -3641,6 +4327,11 @@
         "artifacts": [
           "Tenacity of the Millelith"
         ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CD"
+        ],
         "stats": {
           "hp": 33823,
           "critRate": 76.3,
@@ -3664,6 +4355,11 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "CD"
         ],
         "stats": {
           "atk": 1892,
@@ -3689,6 +4385,11 @@
         "artifacts": [
           "Noblesse Oblige"
         ],
+        "mainStats": [
+          "ER",
+          "Cryo%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 845,
           "critRate": 31,
@@ -3696,11 +4397,11 @@
           "er": 253.9
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=L2ErHEpJook",
+    "author": "TacticalNuke",
     "boss": "Glacial Wolf",
     "clearTime": "112s",
     "characters": [
@@ -3720,6 +4421,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "CD"
         ],
         "stats": {
           "atk": 1314,
@@ -3746,6 +4452,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 799,
           "critRate": 12.4,
@@ -3769,6 +4480,11 @@
         },
         "artifacts": [
           "Silken Moon's Serenade"
+        ],
+        "mainStats": [
+          "HP%",
+          "HP%",
+          "HP%"
         ],
         "stats": {
           "hp": 40318,
@@ -3795,6 +4511,11 @@
         "artifacts": [
           "Deepwood Memories"
         ],
+        "mainStats": [
+          "ER",
+          "Electro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1247,
           "critRate": 68.8,
@@ -3802,11 +4523,11 @@
           "er": 221.9
         }
       }
-    ],
-    "author": "TacticalNuke"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=E528FxfoYUI",
+    "author": "Karon",
     "boss": "Glacial Wolf",
     "clearTime": "119s",
     "characters": [
@@ -3826,6 +4547,11 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [
+          "ATK%",
+          "Pyro%",
+          "CD"
         ],
         "stats": {
           "atk": 2312,
@@ -3852,6 +4578,11 @@
         "artifacts": [
           "Scroll of the Hero of Cinder City"
         ],
+        "mainStats": [
+          "ER",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 2354,
           "critRate": 51.6,
@@ -3875,6 +4606,11 @@
         },
         "artifacts": [
           "Noblesse Oblige"
+        ],
+        "mainStats": [
+          "ER",
+          "DEF%",
+          "DEF%"
         ],
         "stats": {
           "hp": 19780,
@@ -3900,6 +4636,11 @@
         "artifacts": [
           "Viridescent Venerer"
         ],
+        "mainStats": [
+          "ER",
+          "EM",
+          "CR"
+        ],
         "stats": {
           "atk": 1394,
           "em": 497,
@@ -3908,11 +4649,11 @@
           "er": 213.3
         }
       }
-    ],
-    "author": "Karon"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=E528FxfoYUI",
+    "author": "Karon",
     "boss": "Tulpa",
     "clearTime": "119s",
     "characters": [
@@ -3932,6 +4673,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "CD"
         ],
         "stats": {
           "atk": 1223,
@@ -3958,6 +4704,11 @@
         "artifacts": [
           "Deepwood Memories"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "atk": 1182,
           "em": 998,
@@ -3983,6 +4734,11 @@
         "artifacts": [
           "Silken Moon's Serenade"
         ],
+        "mainStats": [
+          "ATK%",
+          "Electro%",
+          "CR"
+        ],
         "stats": {
           "atk": 1576,
           "critRate": 63.7,
@@ -4007,6 +4763,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "EM",
+          "EM",
+          "EM"
+        ],
         "stats": {
           "em": 851,
           "critRate": 5,
@@ -4014,11 +4775,11 @@
           "er": 169.8
         }
       }
-    ],
-    "author": "Karon"
+    ]
   },
   {
     "url": "https://www.youtube.com/watch?v=E528FxfoYUI",
+    "author": "Karon",
     "boss": "Watcher",
     "clearTime": "112s",
     "characters": [
@@ -4038,6 +4799,11 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [
+          "DEF%",
+          "DEF%",
+          "CD"
         ],
         "stats": {
           "def": 2979,
@@ -4064,6 +4830,11 @@
         "artifacts": [
           "Aubade of Morningstar and Moon"
         ],
+        "mainStats": [
+          "DEF%",
+          "DEF%",
+          "CD"
+        ],
         "stats": {
           "def": 2515,
           "em": 199,
@@ -4088,6 +4859,11 @@
         },
         "artifacts": [
           "Silken Moon's Serenade"
+        ],
+        "mainStats": [
+          "ER",
+          "HP%",
+          "CD"
         ],
         "stats": {
           "hp": 33001,
@@ -4114,6 +4890,11 @@
         "artifacts": [
           "Instructor"
         ],
+        "mainStats": [
+          "ATK%",
+          "ATK%",
+          "ATK%"
+        ],
         "stats": {
           "atk": 2288,
           "em": 146,
@@ -4122,7 +4903,6 @@
           "er": 153.7
         }
       }
-    ],
-    "author": "Karon"
+    ]
   }
 ]

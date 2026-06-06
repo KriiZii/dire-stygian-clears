@@ -448,6 +448,7 @@ function characterCard(c) {
             <div class="char-card-meta">
               C${c.constellation}<br>Lv${c.level}
               <div class="char-card-talents">${c.talents[0]} / ${c.talents[1]} / ${c.talents[2]}</div>
+              ${c.mainStats ? `<div class="char-card-mainstats">${c.mainStats.join(' / ')}</div>` : ''}
             </div>
           </div>
         </th>

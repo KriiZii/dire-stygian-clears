@@ -353,6 +353,11 @@ img[data-char="Traveler"] {
   font-size: 0.85em;
   color: var(--text-muted);
 }
+.char-card-mainstats {
+  margin-top: 2px;
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
 .header-badge {
   background: none;
   border: 1px solid var(--border);
