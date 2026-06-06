@@ -48,6 +48,7 @@ body {
   text-align: center;
   margin: 0 0 4px;
   font-size: 0.85em;
+  line-height: 1;
   color: var(--text-muted);
 }
 .video-title {
@@ -327,6 +328,15 @@ img[data-char="Traveler"] {
 #discordBtn {
   text-decoration: none;
   cursor: pointer;
+}
+#c0FilterBtn,
+#noSigFilterBtn {
+  cursor: pointer;
+}
+#c0FilterBtn.active,
+#noSigFilterBtn.active {
+  border-color: var(--active-border);
+  background: var(--active-bg);
 }
 #discordHint {
   font-size: 0.75em;

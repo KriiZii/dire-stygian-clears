@@ -1,5 +1,88 @@
 let CLEARS = [];
 
+// ── Rarity ────────────────────────────────────────────────────────────────────
+const FOUR_STAR_CHARS = new Set([
+  'Aino', 'Amber', 'Barbara', 'Beidou', 'Bennett', 'Candace',
+  'Charlotte', 'Chevreuse', 'Chongyun', 'Collei', 'Dahlia', 'Diona',
+  'Dori', 'Faruzan', 'Fischl', 'Freminet', 'Gaming', 'Gorou',
+  'Iansan', 'Ifa', 'Illuga', 'Jahoda', 'Kachina', 'Kaeya', 'Kaveh',
+  'Kirara', 'Kujou Sara', 'Kuki Shinobu', 'Lan Yan', 'Layla', 'Lisa',
+  'Lynette', 'Mika', 'Ningguang', 'Noelle', 'Ororon', 'Prune',
+  'Razor', 'Rosaria', 'Sayu', 'Sethos', 'Shikanoin Heizou', 'Sucrose',
+  'Thoma', 'Traveler', 'Xiangling', 'Xingqiu', 'Xinyan', 'Yanfei',
+  'Yaoyao', 'Yun Jin', 'Traveler'
+]);
+
+function is5Star(name) {
+  return !FOUR_STAR_CHARS.has(name);
+}
+
+const SIGNATURE_WEAPONS = new Set([
+  'A Thousand Blazing Suns',
+  'A Thousand Floating Dreams',
+  'Absolution',
+  "Amos' Bow",
+  "Angelos' Heptades",
+  'Aqua Simulacra',
+  'Aquila Favonia',
+  "Astral Vulture's Crimson Plumage",
+  'Athame Artis',
+  "Azurelight",
+  "Beacon of the Reed Sea",
+  "Bloodsoaked Ruins",
+  "Calamity Queller",
+  "Cashflow Supervision",
+  "Crane's Echoing Call",
+  "Crimson Moon's Semblance",
+  "Elegy for the End",
+  "Engulfing Lightning",
+  "Everlasting Moonglow",
+  "Fang of the Mountain King",
+  "Fractured Halo",
+  "Freedom-Sworn",
+  "Gest of the Mighty Wolf",
+  "Golden Frostbound Oath",
+  "Haran Geppaku Futsu",
+  "Hunter's Path",
+  "Jadefall's Splendor",
+  "Kagura's Verity",
+  "Key of Khaj-Nisut",
+  "Light of Foliar Incision",
+  "Lightbearing Moonshard",
+  "Lost Prayer to the Sacred Winds",
+  "Lumidouce Elegy",
+  "Memory of Dust",
+  "Mistsplitter Reforged",
+  "Nightweaver's Looking Glass",
+  "Nocturne's Curtain Call",
+  "Peak Patrol Song",
+  "Polar Star",
+  "Primordial Jade Cutter",
+  "Primordial Jade Winged-Spear",
+  "Redhorn Stonethresher",
+  "Reliquary of Truth",
+  "Silvershower Heartstrings",
+  "Song of Broken Pines",
+  "Splendor of Tranquil Waters",
+  "Staff of Homa",
+  "Staff of the Scarlet Sands",
+  "Starcaller's Watch",
+  "Summit Shaper",
+  "Sunny Morning Sleep-In",
+  "Surf's Up",
+  "Symphonist of Scents",
+  "The Daybreak Chronicles",
+  "The First Great Magic",
+  "The Unforged",
+  "Thundering Pulse",
+  "Tome of the Eternal Flow",
+  "Tulaytullah's Remembrance",
+  "Uraku Misugiri",
+  "Verdict",
+  "Vivid Notions",
+  "Vortex Vanquisher"
+]);
+
 // ── Config ────────────────────────────────────────────────────────────────────
 
 const CHAR_ID_OVERRIDES = {
@@ -65,6 +148,8 @@ function toggleBoss(boss) {
 // ── Character icon bar ────────────────────────────────────────────────────────
 
 const selectedChars = new Set();
+let c0FilterActive = false;
+let noSigFilterActive = false;
 
 document.getElementById('charToggle').addEventListener('click', toggleCharBar);
 
@@ -108,6 +193,18 @@ function toggleChar(name) {
   });
   applyFilter();
 }
+
+document.getElementById('c0FilterBtn').addEventListener('click', function () {
+  c0FilterActive = !c0FilterActive;
+  this.classList.toggle('active', c0FilterActive);
+  applyFilter();
+});
+
+document.getElementById('noSigFilterBtn').addEventListener('click', function () {
+  noSigFilterActive = !noSigFilterActive;
+  this.classList.toggle('active', noSigFilterActive);
+  applyFilter();
+});
 
 document.getElementById('charSearch').addEventListener('input', function () {
   const q = this.value.toLowerCase();
@@ -189,7 +286,9 @@ function renderVideos() {
   const filtered = CLEARS.filter(v => {
     const matchChar = selectedChars.size === 0 || [...selectedChars].some(name => v.characters.some(c => c.name === name));
     const matchBoss = !selectedBoss || v.boss === selectedBoss;
-    return matchChar && matchBoss;
+    const matchC0 = !c0FilterActive || v.characters.every(c => !is5Star(c.name) || c.constellation === 0);
+    const matchNoSig = !noSigFilterActive || v.characters.every(c => !SIGNATURE_WEAPONS.has(c.weapon.name));
+    return matchChar && matchBoss && matchC0 && matchNoSig;
   }).sort((a, b) => parseInt(a.clearTime) - parseInt(b.clearTime));
 
   document.getElementById('clearCount').textContent = `${filtered.length} Clears`;
@@ -233,9 +332,13 @@ function applyFilter() {
 function clearFilter() {
   selectedChars.clear();
   selectedBoss = null;
+  c0FilterActive = false;
+  noSigFilterActive = false;
   document.querySelectorAll('#charIcons .char-icon, #bossIcons .char-icon').forEach(el => el.classList.remove('active'));
   document.getElementById('charSearch').value = '';
   document.querySelectorAll('#charIcons .char-icon').forEach(el => el.style.display = '');
+  document.getElementById('c0FilterBtn').classList.remove('active');
+  document.getElementById('noSigFilterBtn').classList.remove('active');
   renderVideos();
 }
 
