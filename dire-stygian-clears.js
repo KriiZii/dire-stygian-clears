@@ -131,7 +131,9 @@ const CHAR_ID_OVERRIDES = {
   'Traveler': 'PlayerGirl',
   'Alhaitham': 'Alhatham',
   'Baizhu':   'Baizhuer',
-  'Lan Yan':  'Lanyan'
+  'Lan Yan':  'Lanyan',
+  'Amber':    'Ambor',
+  'Raiden':   'Shougun'
 };
 
 function charIconUrl(name) {
@@ -142,6 +144,8 @@ function charIconUrl(name) {
 function extractVideoId(url) {
   const biliMatch = url.match(/bilibili\.com\/video\/(BV[^/?]+)/);
   if (biliMatch) return { id: biliMatch[1], platform: 'bilibili' };
+  const twitterMatch = url.match(/(?:twitter\.com|x\.com)\/\w+\/status\/(\d+)/);
+  if (twitterMatch) return { id: twitterMatch[1], platform: 'twitter' };
   const ytPatterns = [
     /[?&]v=([^&]+)/,
     /youtu\.be\/([^?&]+)/,
@@ -201,6 +205,7 @@ let includeStandardActive = false;
 let includeFreeConsActive = false;
 let noSigFilterActive = false;
 let sortBy = 'time';
+let visibleCount = 50;
 let timeSortAscending = true;
 let costSortAscending = true;
 let timeMin = '', timeMax = '', costMin = '', costMax = '';
@@ -546,6 +551,8 @@ function characterCard(c) {
 window.loadVideo = function loadVideo(el, id, platform) {
   const src = platform === 'bilibili'
     ? `https://player.bilibili.com/player.html?bvid=${id}&autoplay=1`
+    : platform === 'twitter'
+    ? `https://platform.twitter.com/embed/Tweet.html?id=${id}`
     : `https://www.youtube.com/embed/${id}?autoplay=1`;
   el.outerHTML = `<iframe class="video-iframe" src="${src}" frameborder="0" allowfullscreen></iframe>`;
 }
@@ -589,7 +596,9 @@ function renderVideos() {
     return;
   }
 
-  filtered.forEach(video => {
+  const visible = filtered.slice(0, visibleCount);
+
+  visible.forEach(video => {
     const videoInfo = extractVideoId(video.url);
     const embed = videoInfo
       ? `${video.author ? `<p class="video-author">${video.author}</p>` : ''}
@@ -620,6 +629,17 @@ function renderVideos() {
     `;
     container.appendChild(section);
   });
+
+  if (visibleCount < filtered.length) {
+    const loadMoreBtn = document.createElement('button');
+    loadMoreBtn.className = 'load-more-btn';
+    loadMoreBtn.textContent = `Load More (${filtered.length - visibleCount} remaining)`;
+    loadMoreBtn.addEventListener('click', () => {
+      visibleCount += 50;
+      renderVideos();
+    });
+    container.appendChild(loadMoreBtn);
+  }
 
   document.querySelectorAll('.char-cards-grid').forEach(grid => {
     const cards = [...grid.querySelectorAll('.char-card')];
@@ -786,6 +806,7 @@ function restoreFilters() {
 }
 
 function applyFilter() {
+  visibleCount = 50;
   saveFilters();
   renderVideos();
 }

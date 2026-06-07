@@ -69,7 +69,30 @@
     "Engulfing Lightning": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Narukami.webp",
     "Favonius Greatsword": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Zephyrus.webp",
     "Skyward Blade": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Dvalin.webp",
-    "Uraku Misugiri": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Needle.webp"
+    "Uraku Misugiri": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Needle.webp",
+    "\"Ultimate Overlord's Mega Magic Sword\"": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Champion.webp",
+    "Absolution": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Estoc.webp",
+    "Ballad of the Boundless Blue": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_DandelionPoem.webp",
+    "Ballad of the Fjords": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Shanty.webp",
+    "Calamity Queller": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Santika.webp",
+    "Cashflow Supervision": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Wheatley.webp",
+    "Flowing Purity": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Vorpal.webp",
+    "Lion's Roar": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Rockkiller.webp",
+    "Memory of Dust": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Kunwu.webp",
+    "Oathsworn Eye": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Jyanome.webp",
+    "Primordial Jade Cutter": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Morax.webp",
+    "Primordial Jade Winged-Spear": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Morax.webp",
+    "Prospector's Shovel": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Ilmarinen.webp",
+    "Rightful Reward": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Vorpal.webp",
+    "Silvershower Heartstrings": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Arcdange.webp",
+    "Skyward Harp": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Dvalin.webp",
+    "Splendor of Tranquil Waters": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Regalis.webp",
+    "Staff of the Scarlet Sands": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Deshret.webp",
+    "Surf's Up": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_MechaPufferfish.webp",
+    "The First Great Magic": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Pledge.webp",
+    "Thundering Pulse": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Narukami.webp",
+    "Wolf-Fang": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Boreas.webp",
+    "Xiphos' Moonlight": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Pleroma.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
@@ -97,6 +120,8 @@
     "Viridescent Venerer": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15002_4.webp",
     "Archaic Petra": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15014_4.webp",
     "Wanderer's Troupe": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15003_4.webp",
-    "Shimenawa's Reminiscence": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15019_4.webp"
+    "Shimenawa's Reminiscence": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15019_4.webp",
+    "Echoes of an Offering": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15024_4.webp",
+    "Gladiator's Finale": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15001_4.webp"
   }
 }
