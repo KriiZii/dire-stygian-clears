@@ -440,6 +440,43 @@ input[type="text"] {
   font-size: 0.85em;
   color: var(--text-muted);
 }
+#costModeInfoWrap {
+  position: relative;
+  display: inline-flex;
+}
+.cost-info-btn {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: none;
+  color: var(--text-muted);
+  font-size: 0.7em;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.cost-info-btn:hover {
+  border-color: var(--border-hover);
+  color: var(--text);
+}
+.cost-mode-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  width: 280px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 0.8em;
+  text-align: left;
+  line-height: 1.5;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
 #sortTimeBtn,
 #sortCostBtn {
   cursor: pointer;

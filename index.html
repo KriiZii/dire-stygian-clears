@@ -50,6 +50,8 @@
         <button id="includeFreeConsBtn" class="header-badge c0-sub-btn" style="visibility:hidden">Include Free Cons</button>
         <div id="charTabRightBtns">
           <button id="noSigFilterBtn" class="header-badge" style="display:none">No Signatures</button>
+          <button id="charFilterModeBtn" class="header-badge" title="And: show runs where every selected character is on the team. Or: show runs featuring at least one selected character.">Mode: And</button>
+          <button id="weaponFilterModeBtn" class="header-badge" style="display:none" title="And: show runs where every selected weapon is used. Or: show runs featuring at least one selected weapon.">Mode: And</button>
           <button id="selectAllBtn" class="header-badge">Select All</button>
           <button id="unselectAllBtn" class="header-badge">Unselect All</button>
         </div>
@@ -73,6 +75,15 @@
     <input type="number" id="costMin" class="range-input" placeholder="Min" min="0">
     <span class="range-sep">–</span>
     <input type="number" id="costMax" class="range-input" placeholder="Max" min="0">
+    <button id="costModeBtn" class="header-badge">Default</button>
+    <div id="costModeInfoWrap">
+      <button id="costModeInfoBtn" class="cost-info-btn" aria-label="Cost mode info">?</button>
+      <div id="costModeTooltip" class="cost-mode-tooltip" hidden>
+        <strong>Default</strong> - Limited 5★ characters cost 1 + their constellation. Signature weapons cost their refinement rank.<br><br>
+        <strong>Incl. Standard</strong> - Same as Default, plus standard 5★ characters (Jean, Diluc, Qiqi, etc.) cost 1, and standard banner weapons (Skyward series, Wolf's Gravestone, etc.) cost 1.<br><br>
+        <strong>Incl. S+4★</strong> - Same as Incl. Standard, plus 4★ characters cost 0.5 per constellation (C0 is still free, C6 = 3).
+      </div>
+    </div>
   </div>
 </div>
 

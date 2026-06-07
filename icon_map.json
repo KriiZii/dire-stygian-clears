@@ -54,7 +54,16 @@
     "Freedom-Sworn": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Widsith.webp",
     "Sacrificer's Staff": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Krivule.webp",
     "Sacrificial Jade": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Yue.webp",
-    "Vivid Notions": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_VaresaTransformer.webp"
+    "Vivid Notions": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_VaresaTransformer.webp",
+    "Aquila Favonia": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Falcon.webp",
+    "Golden Frostbound Oath": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Alkonost.webp",
+    "Lightbearing Moonshard": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_SilverwareSaw.webp",
+    "A Thousand Floating Dreams": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Ayus.webp",
+    "Astral Vulture's Crimson Plumage": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Qoyllorsnova.webp",
+    "Fang of the Mountain King": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_EmeraldSword.webp",
+    "Light of Foliar Incision": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Ayus.webp",
+    "Nightweaver's Looking Glass": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_MenulisRing.webp",
+    "Verdict": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_GoldenVerdict.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
@@ -79,6 +88,8 @@
     "Silken Moon's Serenade": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15042_4.webp",
     "Song of Days Past": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15033_4.webp",
     "Tenacity of the Millelith": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15017_4.webp",
-    "Viridescent Venerer": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15002_4.webp"
+    "Viridescent Venerer": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15002_4.webp",
+    "Archaic Petra": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15014_4.webp",
+    "Wanderer's Troupe": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15003_4.webp"
   }
 }

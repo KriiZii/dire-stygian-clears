@@ -27,12 +27,32 @@ function is5Star(name) {
   return !FOUR_STAR_CHARS.has(name);
 }
 
+const STANDARD_WEAPONS = new Set([
+  "Amos' Bow",
+  'Aquila Favonia',
+  "Lost Prayer to the Sacred Winds",
+  "Primordial Jade Winged-Spear",
+  'Skyward Atlas',
+  'Skyward Blade',
+  'Skyward Harp',
+  'Skyward Pride',
+  'Skyward Spine',
+  "Wolf's Gravestone"
+]);
+
+let costMode = 'default';
+
 function calcCost(video) {
   let cost = 0;
+  const inclStd = costMode === 'includeStandard' || costMode === 'includeAll';
+  const incl4Star = costMode === 'includeAll';
   for (const c of video.characters) {
     const isLimited = is5Star(c.name) && !STANDARD_5STAR_CHARS.has(c.name) && !FREE_CON_5STAR_CHARS.has(c.name);
     if (isLimited) cost += 1 + c.constellation;
+    else if (inclStd && STANDARD_5STAR_CHARS.has(c.name)) cost += 1;
+    else if (incl4Star && !is5Star(c.name)) cost += c.constellation * 0.5;
     if (SIGNATURE_WEAPONS.has(c.weapon.name)) cost += c.weapon.refinement;
+    else if (inclStd && STANDARD_WEAPONS.has(c.weapon.name)) cost += 1;
   }
   return cost;
 }
@@ -41,10 +61,8 @@ const SIGNATURE_WEAPONS = new Set([
   'A Thousand Blazing Suns',
   'A Thousand Floating Dreams',
   'Absolution',
-  "Amos' Bow",
   "Angelos' Heptades",
   'Aqua Simulacra',
-  'Aquila Favonia',
   "Astral Vulture's Crimson Plumage",
   'Athame Artis',
   "Azurelight",
@@ -69,7 +87,6 @@ const SIGNATURE_WEAPONS = new Set([
   "Key of Khaj-Nisut",
   "Light of Foliar Incision",
   "Lightbearing Moonshard",
-  "Lost Prayer to the Sacred Winds",
   "Lumidouce Elegy",
   "Memory of Dust",
   "Mistsplitter Reforged",
@@ -78,7 +95,6 @@ const SIGNATURE_WEAPONS = new Set([
   "Peak Patrol Song",
   "Polar Star",
   "Primordial Jade Cutter",
-  "Primordial Jade Winged-Spear",
   "Redhorn Stonethresher",
   "Reliquary of Truth",
   "Silvershower Heartstrings",
@@ -112,7 +128,10 @@ const CHAR_ID_OVERRIDES = {
   'Hu Tao':   'Hutao',
   'Ororon':   'Olorun',
   'Lynette':  'Linette',
-  'Traveler': 'PlayerGirl'
+  'Traveler': 'PlayerGirl',
+  'Alhaitham': 'Alhatham',
+  'Baizhu':   'Baizhuer',
+  'Lan Yan':  'Lanyan'
 };
 
 function charIconUrl(name) {
@@ -171,6 +190,10 @@ const selectedChars = new Set();
 const selectedWeapons = new Set();
 let activeFilterTab = 'chars';
 let charBarCollapsed = false;
+let charFilterMode = 'all';
+let charSnapshots = { all: null, any: new Set() };
+let weaponFilterMode = 'all';
+let weaponSnapshots = { all: null, any: new Set() };
 let c0FilterActive = false;
 let includeStandardActive = false;
 let includeFreeConsActive = false;
@@ -277,6 +300,8 @@ function switchFilterTab(tab) {
   }
   const noSigBtn = document.getElementById('noSigFilterBtn');
   noSigBtn.style.display = tab === 'weapons' ? '' : 'none';
+  document.getElementById('charFilterModeBtn').style.display = tab === 'chars' ? '' : 'none';
+  document.getElementById('weaponFilterModeBtn').style.display = tab === 'weapons' ? '' : 'none';
   if (tab !== 'weapons' && noSigFilterActive) {
     noSigFilterActive = false;
     noSigBtn.classList.remove('active');
@@ -315,6 +340,42 @@ document.getElementById('unselectAllBtn').addEventListener('click', function () 
     selectedWeapons.clear();
     document.querySelectorAll('#weaponIcons .char-icon').forEach(el => el.classList.remove('active'));
   }
+  applyFilter();
+});
+
+document.getElementById('charFilterModeBtn').addEventListener('click', function () {
+  const allIcons = document.querySelectorAll('#charIcons .char-icon');
+  // Snapshot current mode's selection before switching
+  charSnapshots[charFilterMode] = new Set(selectedChars);
+  charFilterMode = charFilterMode === 'all' ? 'any' : 'all';
+  // Restore the new mode's snapshot
+  const snapshot = charSnapshots[charFilterMode];
+  selectedChars.clear();
+  if (snapshot === null) {
+    allIcons.forEach(el => selectedChars.add(el.dataset.name));
+  } else {
+    snapshot.forEach(n => selectedChars.add(n));
+  }
+  allIcons.forEach(el => el.classList.toggle('active', selectedChars.has(el.dataset.name)));
+  this.textContent = charFilterMode === 'all' ? 'Mode: And' : 'Mode: Or';
+  this.classList.toggle('active', charFilterMode === 'any');
+  applyFilter();
+});
+
+document.getElementById('weaponFilterModeBtn').addEventListener('click', function () {
+  const allIcons = document.querySelectorAll('#weaponIcons .char-icon');
+  weaponSnapshots[weaponFilterMode] = new Set(selectedWeapons);
+  weaponFilterMode = weaponFilterMode === 'all' ? 'any' : 'all';
+  const snapshot = weaponSnapshots[weaponFilterMode];
+  selectedWeapons.clear();
+  if (snapshot === null) {
+    allIcons.forEach(el => selectedWeapons.add(el.dataset.name));
+  } else {
+    snapshot.forEach(n => selectedWeapons.add(n));
+  }
+  allIcons.forEach(el => el.classList.toggle('active', selectedWeapons.has(el.dataset.name)));
+  this.textContent = weaponFilterMode === 'all' ? 'Mode: And' : 'Mode: Or';
+  this.classList.toggle('active', weaponFilterMode === 'any');
   applyFilter();
 });
 
@@ -383,6 +444,26 @@ document.getElementById('sortCostBtn').addEventListener('click', function () {
 });
 
 updateSortBtns();
+
+const COST_MODE_CYCLE = ['default', 'includeStandard', 'includeAll'];
+const COST_MODE_LABELS = { default: 'Default', includeStandard: 'Incl. Standard', includeAll: 'Incl. S+4★' };
+
+document.getElementById('costModeBtn').addEventListener('click', function () {
+  const idx = COST_MODE_CYCLE.indexOf(costMode);
+  costMode = COST_MODE_CYCLE[(idx + 1) % COST_MODE_CYCLE.length];
+  this.textContent = COST_MODE_LABELS[costMode];
+  this.classList.toggle('active', costMode !== 'default');
+  applyFilter();
+});
+
+document.getElementById('costModeInfoBtn').addEventListener('click', function (e) {
+  e.stopPropagation();
+  const tip = document.getElementById('costModeTooltip');
+  tip.hidden = !tip.hidden;
+});
+document.addEventListener('click', function () {
+  document.getElementById('costModeTooltip').hidden = true;
+});
 
 document.getElementById('timeMin').addEventListener('input', function () { timeMin = this.value; applyFilter(); });
 document.getElementById('timeMax').addEventListener('input', function () { timeMax = this.value; applyFilter(); });
@@ -469,8 +550,12 @@ function renderVideos() {
   container.innerHTML = '';
 
   const filtered = CLEARS.filter(v => {
-    const matchChar = v.characters.every(c => selectedChars.has(c.name));
-    const matchWeapon = v.characters.every(c => selectedWeapons.has(c.weapon.name));
+    const matchChar = charFilterMode === 'any'
+      ? (selectedChars.size === 0 || v.characters.some(c => selectedChars.has(c.name)))
+      : v.characters.every(c => selectedChars.has(c.name));
+    const matchWeapon = weaponFilterMode === 'any'
+      ? (selectedWeapons.size === 0 || v.characters.some(c => selectedWeapons.has(c.weapon.name)))
+      : v.characters.every(c => selectedWeapons.has(c.weapon.name));
     const matchBoss = !selectedBoss || v.boss === selectedBoss;
     const matchC0 = !c0FilterActive || v.characters.every(c =>
       !is5Star(c.name) ||
@@ -541,22 +626,39 @@ function renderVideos() {
 }
 
 function saveFilters() {
-  const deselectedChars = [];
-  document.querySelectorAll('#charIcons .char-icon').forEach(el => {
-    if (!selectedChars.has(el.dataset.name)) deselectedChars.push(el.dataset.name);
-  });
-  const deselectedWeapons = [];
-  document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
-    if (!selectedWeapons.has(el.dataset.name)) deselectedWeapons.push(el.dataset.name);
-  });
+  const allIcons = document.querySelectorAll('#charIcons .char-icon');
+  // Compute effective snapshots (active mode uses current selectedChars)
+  const effectiveAll = charFilterMode === 'all' ? selectedChars : (charSnapshots.all ?? 'all');
+  const effectiveAny = charFilterMode === 'any' ? selectedChars : charSnapshots.any;
+
+  const allModeDeselected = [];
+  if (effectiveAll !== 'all') {
+    allIcons.forEach(el => { if (!effectiveAll.has(el.dataset.name)) allModeDeselected.push(el.dataset.name); });
+  }
+  const anyModeSelected = [...effectiveAny];
+
+  const effectiveWeaponAll = weaponFilterMode === 'all' ? selectedWeapons : (weaponSnapshots.all ?? 'all');
+  const effectiveWeaponAny = weaponFilterMode === 'any' ? selectedWeapons : weaponSnapshots.any;
+  const allWeaponModeDeselected = [];
+  if (effectiveWeaponAll !== 'all') {
+    document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+      if (!effectiveWeaponAll.has(el.dataset.name)) allWeaponModeDeselected.push(el.dataset.name);
+    });
+  }
+  const anyWeaponModeSelected = [...effectiveWeaponAny];
   localStorage.setItem('filters', JSON.stringify({
-    deselectedChars,
-    deselectedWeapons,
+    allModeDeselected,
+    anyModeSelected,
+    allWeaponModeDeselected,
+    anyWeaponModeSelected,
+    weaponFilterMode,
+    costMode,
     boss: selectedBoss,
     c0: c0FilterActive,
     includeStandard: includeStandardActive,
     includeFreeCons: includeFreeConsActive,
     noSig: noSigFilterActive,
+    charFilterMode,
     sortBy,
     timeAsc: timeSortAscending,
     costAsc: costSortAscending,
@@ -569,21 +671,64 @@ function restoreFilters() {
   try { state = JSON.parse(localStorage.getItem('filters')); } catch { return; }
   if (!state) return;
 
-  const deselectedChars = new Set(state.deselectedChars || []);
-  document.querySelectorAll('#charIcons .char-icon').forEach(el => {
-    if (deselectedChars.has(el.dataset.name)) {
-      selectedChars.delete(el.dataset.name);
-      el.classList.remove('active');
-    }
-  });
+  // Restore both mode snapshots (fall back to legacy deselectedChars for all-mode)
+  const allDesel = new Set(state.allModeDeselected ?? state.deselectedChars ?? []);
+  if (allDesel.size > 0) {
+    const allChars = new Set();
+    document.querySelectorAll('#charIcons .char-icon').forEach(el => {
+      if (!allDesel.has(el.dataset.name)) allChars.add(el.dataset.name);
+    });
+    charSnapshots.all = allChars;
+  }
+  charSnapshots.any = new Set(state.anyModeSelected || []);
 
-  const deselectedWeapons = new Set(state.deselectedWeapons || []);
-  document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
-    if (deselectedWeapons.has(el.dataset.name)) {
-      selectedWeapons.delete(el.dataset.name);
-      el.classList.remove('active');
-    }
-  });
+  if (state.charFilterMode === 'any') {
+    charFilterMode = 'any';
+    selectedChars.clear();
+    charSnapshots.any.forEach(n => selectedChars.add(n));
+    document.querySelectorAll('#charIcons .char-icon').forEach(el => {
+      el.classList.toggle('active', selectedChars.has(el.dataset.name));
+    });
+    const btn = document.getElementById('charFilterModeBtn');
+    btn.textContent = 'Mode: Or';
+    btn.classList.add('active');
+  } else if (charSnapshots.all !== null) {
+    document.querySelectorAll('#charIcons .char-icon').forEach(el => {
+      if (!charSnapshots.all.has(el.dataset.name)) {
+        selectedChars.delete(el.dataset.name);
+        el.classList.remove('active');
+      }
+    });
+  }
+
+  const weaponAllDesel = new Set(state.allWeaponModeDeselected ?? state.deselectedWeapons ?? []);
+  if (weaponAllDesel.size > 0) {
+    const allWeapons = new Set();
+    document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+      if (!weaponAllDesel.has(el.dataset.name)) allWeapons.add(el.dataset.name);
+    });
+    weaponSnapshots.all = allWeapons;
+  }
+  weaponSnapshots.any = new Set(state.anyWeaponModeSelected || []);
+
+  if (state.weaponFilterMode === 'any') {
+    weaponFilterMode = 'any';
+    selectedWeapons.clear();
+    weaponSnapshots.any.forEach(n => selectedWeapons.add(n));
+    document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+      el.classList.toggle('active', selectedWeapons.has(el.dataset.name));
+    });
+    const btn = document.getElementById('weaponFilterModeBtn');
+    btn.textContent = 'Mode: Or';
+    btn.classList.add('active');
+  } else if (weaponSnapshots.all !== null) {
+    document.querySelectorAll('#weaponIcons .char-icon').forEach(el => {
+      if (!weaponSnapshots.all.has(el.dataset.name)) {
+        selectedWeapons.delete(el.dataset.name);
+        el.classList.remove('active');
+      }
+    });
+  }
 
   if (state.boss) {
     selectedBoss = state.boss;
@@ -609,6 +754,13 @@ function restoreFilters() {
   if (state.noSig) {
     noSigFilterActive = true;
     document.getElementById('noSigFilterBtn').classList.add('active');
+  }
+
+  if (state.costMode && state.costMode !== 'default') {
+    costMode = state.costMode;
+    const btn = document.getElementById('costModeBtn');
+    btn.textContent = COST_MODE_LABELS[costMode] ?? 'Default';
+    btn.classList.add('active');
   }
 
   if (state.sortBy) sortBy = state.sortBy;
@@ -652,6 +804,20 @@ function clearFilter() {
   document.getElementById('includeFreeConsBtn').classList.remove('active');
   document.querySelectorAll('.c0-sub-btn').forEach(btn => { btn.style.visibility = 'hidden'; });
   document.getElementById('noSigFilterBtn').classList.remove('active');
+  charFilterMode = 'all';
+  charSnapshots = { all: null, any: new Set() };
+  const modeBtn = document.getElementById('charFilterModeBtn');
+  modeBtn.textContent = 'Mode: And';
+  modeBtn.classList.remove('active');
+  weaponFilterMode = 'all';
+  weaponSnapshots = { all: null, any: new Set() };
+  const weaponModeBtn = document.getElementById('weaponFilterModeBtn');
+  weaponModeBtn.textContent = 'Mode: And';
+  weaponModeBtn.classList.remove('active');
+  costMode = 'default';
+  const costModeBtn = document.getElementById('costModeBtn');
+  costModeBtn.textContent = 'Default';
+  costModeBtn.classList.remove('active');
   renderVideos();
 }
 
