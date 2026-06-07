@@ -64,7 +64,12 @@
     "Light of Foliar Incision": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Ayus.webp",
     "Nightweaver's Looking Glass": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_MenulisRing.webp",
     "Verdict": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_GoldenVerdict.webp",
-    "The Daybreak Chronicles": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Arianna.webp"
+    "The Daybreak Chronicles": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Arianna.webp",
+    "Aqua Simulacra": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Kirin.webp",
+    "Engulfing Lightning": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Narukami.webp",
+    "Favonius Greatsword": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Zephyrus.webp",
+    "Skyward Blade": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Dvalin.webp",
+    "Uraku Misugiri": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Needle.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
