@@ -63,7 +63,8 @@
     "Fang of the Mountain King": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_EmeraldSword.webp",
     "Light of Foliar Incision": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Ayus.webp",
     "Nightweaver's Looking Glass": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_MenulisRing.webp",
-    "Verdict": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_GoldenVerdict.webp"
+    "Verdict": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_GoldenVerdict.webp",
+    "The Daybreak Chronicles": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Arianna.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
@@ -90,6 +91,7 @@
     "Tenacity of the Millelith": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15017_4.webp",
     "Viridescent Venerer": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15002_4.webp",
     "Archaic Petra": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15014_4.webp",
-    "Wanderer's Troupe": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15003_4.webp"
+    "Wanderer's Troupe": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15003_4.webp",
+    "Shimenawa's Reminiscence": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15019_4.webp"
   }
 }
