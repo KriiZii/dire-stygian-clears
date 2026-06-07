@@ -140,14 +140,16 @@ function charIconUrl(name) {
 }
 
 function extractVideoId(url) {
-  const patterns = [
+  const biliMatch = url.match(/bilibili\.com\/video\/(BV[^/?]+)/);
+  if (biliMatch) return { id: biliMatch[1], platform: 'bilibili' };
+  const ytPatterns = [
     /[?&]v=([^&]+)/,
     /youtu\.be\/([^?&]+)/,
     /embed\/([^?&]+)/
   ];
-  for (const p of patterns) {
+  for (const p of ytPatterns) {
     const m = url.match(p);
-    if (m) return m[1];
+    if (m) return { id: m[1], platform: 'youtube' };
   }
   return null;
 }
@@ -528,7 +530,7 @@ function characterCard(c) {
             </div>
             <div class="char-card-meta">
               C${c.constellation}<br>Lv${c.level}
-              <div class="char-card-talents">${c.talents[0]} / ${c.talents[1]} / ${c.talents[2]}</div>
+              ${c.talents && c.talents.length ? `<div class="char-card-talents">${c.talents[0]} / ${c.talents[1]} / ${c.talents[2]}</div>` : ''}
               ${c.mainStats ? `<div class="char-card-mainstats">${c.mainStats.join(' / ')}</div>` : ''}
             </div>
           </div>
@@ -541,8 +543,11 @@ function characterCard(c) {
   `;
 }
 
-window.loadVideo = function loadVideo(el, videoId) {
-  el.outerHTML = `<iframe class="video-iframe" src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allowfullscreen></iframe>`;
+window.loadVideo = function loadVideo(el, id, platform) {
+  const src = platform === 'bilibili'
+    ? `https://player.bilibili.com/player.html?bvid=${id}&autoplay=1`
+    : `https://www.youtube.com/embed/${id}?autoplay=1`;
+  el.outerHTML = `<iframe class="video-iframe" src="${src}" frameborder="0" allowfullscreen></iframe>`;
 }
 
 function renderVideos() {
@@ -585,25 +590,31 @@ function renderVideos() {
   }
 
   filtered.forEach(video => {
-    const videoId = extractVideoId(video.url);
-    const embed = videoId
+    const videoInfo = extractVideoId(video.url);
+    const embed = videoInfo
       ? `${video.author ? `<p class="video-author">${video.author}</p>` : ''}
          <div class="video-wrapper">
-           <div class="video-embed-placeholder" onclick="loadVideo(this, '${videoId}')">
-             <img src="https://i.ytimg.com/vi/${videoId}/hqdefault.jpg" width="560" height="315" class="video-thumb">
+           <div class="video-embed-placeholder" onclick="loadVideo(this, '${videoInfo.id}', '${videoInfo.platform}')">
+             ${videoInfo.platform === 'youtube'
+               ? `<img src="https://i.ytimg.com/vi/${videoInfo.id}/hqdefault.jpg" width="560" height="315" class="video-thumb">`
+               : ''}
              <div class="video-play-btn">&#9654; View Video</div>
            </div>
          </div>`
       : `<a href="${video.url}" target="_blank">${video.url}</a>`;
 
     const charCards = video.characters.map(c => `<div class="char-card-wrap">${characterCard(c)}</div>`).join('');
+    const missingStats = video.characters.some(c => !c.stats || Object.keys(c.stats).length === 0);
+    const helpBtn = missingStats
+      ? `<span class="help-stats-btn help-stats-ghost" aria-hidden="true">Help add stats!</span><strong>${video.boss}</strong> - ${video.clearTime} - ${calcCost(video)} Cost<a href="https://forms.gle/dGshsWdPAPDuNTNbA" target="_blank" class="help-stats-btn">Help add stats!</a>`
+      : `<strong>${video.boss}</strong> - ${video.clearTime} - ${calcCost(video)} Cost`;
 
     const section = document.createElement('div');
     section.className = 'video-section';
     section.innerHTML = `
       <div class="video-layout">
         ${embed}
-        <p class="video-title"><strong>${video.boss}</strong> - ${video.clearTime} - ${calcCost(video)} Cost</p>
+        <p class="video-title">${helpBtn}</p>
         <div class="char-cards-grid">${charCards}</div>
       </div>
     `;
