@@ -93,7 +93,19 @@
     "Thundering Pulse": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Narukami.webp",
     "Wolf-Fang": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Boreas.webp",
     "Xiphos' Moonlight": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Pleroma.webp",
-    "Tome of the Eternal Flow": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Iudex.webp"
+    "Tome of the Eternal Flow": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Iudex.webp",
+    "\"The Catch\"": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Mori.webp",
+    "Black Tassel": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Noire.webp",
+    "Calamity of Eshu": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_SacrificialNgombe.webp",
+    "Flower-Wreathed Feathers": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Umpakati.webp",
+    "Harbinger of Dawn": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Dawn.webp",
+    "Lost Prayer to the Sacred Winds": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Fourwinds.webp",
+    "Lumidouce Elegy": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Muguet.webp",
+    "Mailed Flower": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Fleurfair.webp",
+    "Moonweaver's Dawn": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Miekka.webp",
+    "The Black Sword": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Bloodstained.webp",
+    "The Widsith": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Troupe.webp",
+    "Windblume Ode": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Fleurfair.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
@@ -124,6 +136,7 @@
     "Shimenawa's Reminiscence": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15019_4.webp",
     "Echoes of an Offering": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15024_4.webp",
     "Gladiator's Finale": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15001_4.webp",
-    "Blizzard Strayer": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_14001_4.webp"
+    "Blizzard Strayer": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_14001_4.webp",
+    "Flower of Paradise Lost": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15028_4.webp"
   }
 }

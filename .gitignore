@@ -3,3 +3,4 @@ add_clear.py
 build_icon_map.py
 __pycache__/
 *.py
+weapon_aliases.json

@@ -133,7 +133,9 @@ const CHAR_ID_OVERRIDES = {
   'Baizhu':   'Baizhuer',
   'Lan Yan':  'Lanyan',
   'Amber':    'Ambor',
-  'Raiden':   'Shougun'
+  'Raiden':   'Shougun',
+  'Kuki':     'Shinobu',
+  'Lyney':    'Liney'
 };
 
 function charIconUrl(name) {
