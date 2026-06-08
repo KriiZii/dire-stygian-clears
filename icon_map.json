@@ -92,7 +92,8 @@
     "The First Great Magic": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Pledge.webp",
     "Thundering Pulse": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Narukami.webp",
     "Wolf-Fang": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Boreas.webp",
-    "Xiphos' Moonlight": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Pleroma.webp"
+    "Xiphos' Moonlight": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Pleroma.webp",
+    "Tome of the Eternal Flow": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Iudex.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
@@ -122,6 +123,7 @@
     "Wanderer's Troupe": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15003_4.webp",
     "Shimenawa's Reminiscence": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15019_4.webp",
     "Echoes of an Offering": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15024_4.webp",
-    "Gladiator's Finale": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15001_4.webp"
+    "Gladiator's Finale": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15001_4.webp",
+    "Blizzard Strayer": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_14001_4.webp"
   }
 }

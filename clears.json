@@ -20194,5 +20194,1517 @@
         "stats": {}
       }
     ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=qDe_ku7yNpM",
+    "author": "Valley",
+    "boss": "Glacial Wolf",
+    "clearTime": "33s",
+    "characters": [
+      {
+        "name": "Durin",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Athame Artis",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Prune",
+        "level": 70,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Skyward Atlas",
+          "refinement": 2,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 80,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 89,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=8oAyOitKDHM",
+    "author": "Mirai",
+    "boss": "Glacial Wolf",
+    "clearTime": "57s",
+    "characters": [
+      {
+        "name": "Ganyu",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Astral Vulture's Crimson Plumage",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Blizzard Strayer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Durin",
+        "level": 90,
+        "constellation": 3,
+        "talents": [],
+        "weapon": {
+          "name": "Athame Artis",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Prune",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Sacrificial Fragments",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=cBqu_pLuk3Y",
+    "author": "Takanashi Yomi",
+    "boss": "Glacial Wolf",
+    "clearTime": "72s",
+    "characters": [
+      {
+        "name": "Varka",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Gest of the Mighty Wolf",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Venti",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "The Daybreak Chronicles",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 87,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Skyward Atlas",
+          "refinement": 3,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Durin",
+        "level": 90,
+        "constellation": 3,
+        "talents": [],
+        "weapon": {
+          "name": "Athame Artis",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=7rc6jqGCH2o",
+    "author": "Uruziel",
+    "boss": "Glacial Wolf",
+    "clearTime": "46s",
+    "characters": [
+      {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 4,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Kazuha",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Sacrificial Sword",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=t34og21AzDg",
+    "author": "\u300cM\u00e6lstromica\u300d",
+    "boss": "Glacial Wolf",
+    "clearTime": "71s",
+    "characters": [
+      {
+        "name": "Neuvillette",
+        "level": 90,
+        "constellation": 3,
+        "talents": [],
+        "weapon": {
+          "name": "Vivid Notions",
+          "refinement": 3,
+          "level": 90
+        },
+        "artifacts": [
+          "2pc/2pc FoPL/Nothing"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Xiangling",
+        "level": 90,
+        "constellation": 3,
+        "talents": [],
+        "weapon": {
+          "name": "Favonius Lance",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Noblesse Oblige"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Xianyun",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Crane's Echoing Call",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Pca8I9m9pW8",
+    "author": "Air_Dan",
+    "boss": "Glacial Wolf",
+    "clearTime": "72s",
+    "characters": [
+      {
+        "name": "Chiori",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Uraku Misugiri",
+          "refinement": 4,
+          "level": 90
+        },
+        "artifacts": [
+          "Husk of Opulent Dreams"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Xilonen",
+        "level": 90,
+        "constellation": 3,
+        "talents": [],
+        "weapon": {
+          "name": "Peak Patrol Song",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Prune",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Favonius Codex",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=CVIdiZvgbxk",
+    "author": "Chenny",
+    "boss": "Glacial Wolf",
+    "clearTime": "102s",
+    "characters": [
+      {
+        "name": "Yoimiya",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Thundering Pulse",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Shimenawa's Reminiscence"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Kazuha",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Favonius Sword",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Durin",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Athame Artis",
+          "refinement": 2,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=J5Ae7gGE7fY",
+    "author": "\u300cM\u00e6lstromica\u300d",
+    "boss": "Glacial Wolf",
+    "clearTime": "46s",
+    "characters": [
+      {
+        "name": "Gaming",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Gest of the Mighty Wolf",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Crimson Witch of Flames"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 80,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Xianyun",
+        "level": 100,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Crane's Echoing Call",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5MeuvuhJOpE",
+    "author": "shanow",
+    "boss": "Glacial Wolf",
+    "clearTime": "44s",
+    "characters": [
+      {
+        "name": "Neuvillette",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Tome of the Eternal Flow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Marechaussee Hunter"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Xilonen",
+        "level": 90,
+        "constellation": 4,
+        "talents": [],
+        "weapon": {
+          "name": "Peak Patrol Song",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Venti",
+        "level": 90,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=N8AT0ruCYEo",
+    "author": "ArcticZanna",
+    "boss": "Glacial Wolf",
+    "clearTime": "18s",
+    "characters": [
+      {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Thrilling Tales of Dragon Slayers",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Xilonen",
+        "level": 90,
+        "constellation": 4,
+        "talents": [],
+        "weapon": {
+          "name": "Peak Patrol Song",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Lan Yan",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=peix-vpa2_c",
+    "author": "Kimikas",
+    "boss": "Glacial Wolf",
+    "clearTime": "27s",
+    "characters": [
+      {
+        "name": "Chasca",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Astral Vulture's Crimson Plumage",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 2,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Durin",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Athame Artis",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Emblem of Severed Fate"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.bilibili.com/video/BV1wmGk6sECU/",
+    "author": "\u7eaf\u767d\u4e4b\u8a93\u7ea6",
+    "boss": "Glacial Wolf",
+    "clearTime": "38s",
+    "characters": [
+      {
+        "name": "Wriothesley",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Cashflow Supervision",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Marechaussee Hunter"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Durin",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Athame Artis",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Sucrose",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Thrilling Tales of Dragon Slayers",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=WPMm_DESqMs",
+    "author": "Xtream_9",
+    "boss": "Glacial Wolf",
+    "clearTime": "23s",
+    "characters": [
+      {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Venti",
+        "level": 90,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "Favonius Warbow",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://x.com/hierarchyofmeme/status/2059968859210489913",
+    "author": "hierarchyofmeme",
+    "boss": "Glacial Wolf",
+    "clearTime": "22s",
+    "characters": [
+      {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Lynette",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Sacrificial Sword",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 3,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.bilibili.com/video/BV13rVV6fEVs/",
+    "author": "_\u4e0e\u9752\u5c71_",
+    "boss": "Glacial Wolf",
+    "clearTime": "11s",
+    "characters": [
+      {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Lan Yan",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Thrilling Tales of Dragon Slayers",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.bilibili.com/video/BV1TvG96cESW/",
+    "author": "lqwyz_",
+    "boss": "Glacial Wolf",
+    "clearTime": "12s",
+    "characters": [
+      {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Lan Yan",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Thrilling Tales of Dragon Slayers",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=p8ktnmI9lHs",
+    "author": "Shifu",
+    "boss": "Glacial Wolf",
+    "clearTime": "17s",
+    "characters": [
+      {
+        "name": "Mavuika",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Xilonen",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Peak Patrol Song",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Archaic Petra"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Lan Yan",
+        "level": 60,
+        "constellation": 4,
+        "talents": [],
+        "weapon": {
+          "name": "Sacrificial Fragments",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=D_iekYUeEWk",
+    "author": "Creme Puffy",
+    "boss": "Glacial Wolf",
+    "clearTime": "80s",
+    "characters": [
+      {
+        "name": "Varesa",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Vivid Notions",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Long Night's Oath"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Xilonen",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Peak Patrol Song",
+          "refinement": 2,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Durin",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Mistsplitter Reforged",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.bilibili.com/video/BV1f2VW6KEpc/",
+    "author": "\u4e00\u53ea\u8475owo",
+    "boss": "Glacial Wolf",
+    "clearTime": "17s",
+    "characters": [
+      {
+        "name": "Kinich",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Durin",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Athame Artis",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Noblesse Oblige"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Lan Yan",
+        "level": 20,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Deepwood Memories"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.bilibili.com/video/BV198G26HEY2/",
+    "author": "CHiwenKi",
+    "boss": "Glacial Wolf",
+    "clearTime": "14s",
+    "characters": [
+      {
+        "name": "Varka",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Gest of the Mighty Wolf",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Venti",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Elegy for the End",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Durin",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Athame Artis",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Noblesse Oblige"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
+  },
+  {
+    "url": "https://www.bilibili.com/video/BV198G26HEeU/",
+    "author": "\u3068\u3093\u307c\u3093\u307c\u3093",
+    "boss": "Glacial Wolf",
+    "clearTime": "36s",
+    "characters": [
+      {
+        "name": "Hu Tao",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Staff of Homa",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Crimson Witch of Flames"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Nicole",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Angelos' Heptades",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Celestial Gift"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Citlali",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Starcaller's Watch",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Scroll of the Hero of Cinder City"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Kazuha",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Freedom-Sworn",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Viridescent Venerer"
+        ],
+        "mainStats": [],
+        "stats": {}
+      }
+    ]
   }
 ]
