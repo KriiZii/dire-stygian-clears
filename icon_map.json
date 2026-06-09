@@ -105,7 +105,13 @@
     "Moonweaver's Dawn": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Miekka.webp",
     "The Black Sword": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Bloodstained.webp",
     "The Widsith": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Troupe.webp",
-    "Windblume Ode": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Fleurfair.webp"
+    "Windblume Ode": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Fleurfair.webp",
+    "Cinnabar Spindle": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Opus.webp",
+    "Cloudforged": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Ultimatum.webp",
+    "Hunter's Path": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Ayus.webp",
+    "Jadefall's Splendor": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Morax.webp",
+    "Makhaira Aquamarine": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Pleroma.webp",
+    "Redhorn Stonethresher": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Itadorimaru.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
@@ -137,6 +143,9 @@
     "Echoes of an Offering": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15024_4.webp",
     "Gladiator's Finale": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15001_4.webp",
     "Blizzard Strayer": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_14001_4.webp",
-    "Flower of Paradise Lost": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15028_4.webp"
+    "Flower of Paradise Lost": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15028_4.webp",
+    "Nighttime Whispers in the Echoing Woods": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15034_4.webp",
+    "Unfinished Reverie": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15036_4.webp",
+    "Vermillion Hereafter": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15023_4.webp"
   }
 }

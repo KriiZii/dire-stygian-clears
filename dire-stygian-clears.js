@@ -135,7 +135,8 @@ const CHAR_ID_OVERRIDES = {
   'Amber':    'Ambor',
   'Raiden':   'Shougun',
   'Kuki':     'Shinobu',
-  'Lyney':    'Liney'
+  'Lyney':    'Liney',
+  'Noelle':   'Noel'
 };
 
 function charIconUrl(name) {
