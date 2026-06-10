@@ -49,6 +49,7 @@ function calcCost(video) {
   for (const c of video.characters) {
     const isLimited = is5Star(c.name) && !STANDARD_5STAR_CHARS.has(c.name) && !FREE_CON_5STAR_CHARS.has(c.name);
     if (isLimited) cost += 1 + c.constellation;
+    else if (FREE_CON_5STAR_CHARS.has(c.name)) cost += Math.max(1, c.constellation);
     else if (inclStd && STANDARD_5STAR_CHARS.has(c.name)) cost += 1;
     else if (incl4Star && !is5Star(c.name)) cost += c.constellation * 0.5;
     if (SIGNATURE_WEAPONS.has(c.weapon.name)) cost += c.weapon.refinement;
