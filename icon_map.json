@@ -111,7 +111,14 @@
     "Hunter's Path": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Ayus.webp",
     "Jadefall's Splendor": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Catalyst_Morax.webp",
     "Makhaira Aquamarine": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Pleroma.webp",
-    "Redhorn Stonethresher": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Itadorimaru.webp"
+    "Redhorn Stonethresher": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Itadorimaru.webp",
+    "End of the Line": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Bow_Fin.webp",
+    "Festering Desire": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Magnum.webp",
+    "Footprint of the Rainbow": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Pole_Isikhulu.webp",
+    "Forest Regalia": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Arakalari.webp",
+    "Haran Geppaku Futsu": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Amenoma.webp",
+    "Song of Broken Pines": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Claymore_Widsith.webp",
+    "Toukabou Shigure": "https://api.lunaris.moe/data/assets/weaponicon/UI_EquipIcon_Sword_Kasabouzu.webp"
   },
   "artifacts": {
     "A Day Carved From Rising Winds": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15044_4.webp",
@@ -146,6 +153,7 @@
     "Flower of Paradise Lost": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15028_4.webp",
     "Nighttime Whispers in the Echoing Woods": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15034_4.webp",
     "Unfinished Reverie": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15036_4.webp",
-    "Vermillion Hereafter": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15023_4.webp"
+    "Vermillion Hereafter": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15023_4.webp",
+    "Pale Flame": "https://api.lunaris.moe/data/assets/artifacts/UI_RelicIcon_15018_4.webp"
   }
 }
