@@ -30354,22 +30354,6 @@
     "clearTime": "68s",
     "characters": [
       {
-        "name": "Lauma",
-        "level": 80,
-        "constellation": 0,
-        "talents": [],
-        "weapon": {
-          "name": "Nightweaver's Looking Glass",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "Silken Moon's Serenade"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
         "name": "Nefer",
         "level": 80,
         "constellation": 2,
@@ -30381,6 +30365,22 @@
         },
         "artifacts": [
           "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Lauma",
+        "level": 80,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "Nightweaver's Looking Glass",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Silken Moon's Serenade"
         ],
         "mainStats": [],
         "stats": {}
@@ -30714,6 +30714,22 @@
     "clearTime": "117s",
     "characters": [
       {
+        "name": "Flins",
+        "level": 90,
+        "constellation": 1,
+        "talents": [],
+        "weapon": {
+          "name": "Bloodsoaked Ruins",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Ineffa",
         "level": 90,
         "constellation": 1,
@@ -30741,22 +30757,6 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Flins",
-        "level": 90,
-        "constellation": 1,
-        "talents": [],
-        "weapon": {
-          "name": "Bloodsoaked Ruins",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "Night of the Sky's Unveiling"
         ],
         "mainStats": [],
         "stats": {}
@@ -33666,6 +33666,22 @@
     "clearTime": "35s",
     "characters": [
       {
+        "name": "Clorinde",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Absolution",
+          "refinement": 4,
+          "level": 90
+        },
+        "artifacts": [
+          "Fragment of Harmonic Whimsy"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Fischl",
         "level": 90,
         "constellation": 6,
@@ -33709,22 +33725,6 @@
         },
         "artifacts": [
           "Noblesse Oblige"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Clorinde",
-        "level": 100,
-        "constellation": 6,
-        "talents": [],
-        "weapon": {
-          "name": "Absolution",
-          "refinement": 4,
-          "level": 90
-        },
-        "artifacts": [
-          "Fragment of Harmonic Whimsy"
         ],
         "mainStats": [],
         "stats": {}
@@ -33810,6 +33810,22 @@
     "clearTime": "101s",
     "characters": [
       {
+        "name": "Baizhu",
+        "level": 90,
+        "constellation": 4,
+        "talents": [],
+        "weapon": {
+          "name": "Jadefall's Splendor",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Deepwood Memories"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Lauma",
         "level": 90,
         "constellation": 3,
@@ -33833,22 +33849,6 @@
         "weapon": {
           "name": "A Thousand Floating Dreams",
           "refinement": 2,
-          "level": 90
-        },
-        "artifacts": [
-          "Deepwood Memories"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Baizhu",
-        "level": 90,
-        "constellation": 4,
-        "talents": [],
-        "weapon": {
-          "name": "Jadefall's Splendor",
-          "refinement": 1,
           "level": 90
         },
         "artifacts": [
@@ -34674,6 +34674,22 @@
     "clearTime": "15s",
     "characters": [
       {
+        "name": "Nefer",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Reliquary of Truth",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Lauma",
         "level": 90,
         "constellation": 6,
@@ -34701,22 +34717,6 @@
         },
         "artifacts": [
           "Silken Moon's Serenade"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Nefer",
-        "level": 100,
-        "constellation": 6,
-        "talents": [],
-        "weapon": {
-          "name": "Reliquary of Truth",
-          "refinement": 5,
-          "level": 90
-        },
-        "artifacts": [
-          "Night of the Sky's Unveiling"
         ],
         "mainStats": [],
         "stats": {}
@@ -36546,6 +36546,22 @@
     "clearTime": "117s",
     "characters": [
       {
+        "name": "Zibai",
+        "level": 95,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Harbinger of Dawn",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Illuga",
         "level": 80,
         "constellation": 6,
@@ -36573,22 +36589,6 @@
         },
         "artifacts": [
           "Silken Moon's Serenade"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Zibai",
-        "level": 95,
-        "constellation": 2,
-        "talents": [],
-        "weapon": {
-          "name": "Harbinger of Dawn",
-          "refinement": 5,
-          "level": 90
-        },
-        "artifacts": [
-          "Night of the Sky's Unveiling"
         ],
         "mainStats": [],
         "stats": {}
@@ -37698,6 +37698,22 @@
     "clearTime": "113s",
     "characters": [
       {
+        "name": "Nefer",
+        "level": 81,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "Reliquary of Truth",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Columbina",
         "level": 90,
         "constellation": 0,
@@ -37741,22 +37757,6 @@
         },
         "artifacts": [
           "Instructor"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Nefer",
-        "level": 81,
-        "constellation": 0,
-        "talents": [],
-        "weapon": {
-          "name": "Reliquary of Truth",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "Night of the Sky's Unveiling"
         ],
         "mainStats": [],
         "stats": {}
@@ -38994,6 +38994,22 @@
     "clearTime": "115s",
     "characters": [
       {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "A Thousand Blazing Suns",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Citlali",
         "level": 90,
         "constellation": 2,
@@ -39021,22 +39037,6 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Mavuika",
-        "level": 90,
-        "constellation": 0,
-        "talents": [],
-        "weapon": {
-          "name": "A Thousand Blazing Suns",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "Obsidian Codex"
         ],
         "mainStats": [],
         "stats": {}
@@ -40578,6 +40578,22 @@
     "clearTime": "120s",
     "characters": [
       {
+        "name": "Nefer",
+        "level": 90,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "Reliquary of Truth",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Chevreuse",
         "level": 90,
         "constellation": 6,
@@ -40621,22 +40637,6 @@
         },
         "artifacts": [
           "Deepwood Memories"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Nefer",
-        "level": 90,
-        "constellation": 0,
-        "talents": [],
-        "weapon": {
-          "name": "Reliquary of Truth",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "Night of the Sky's Unveiling"
         ],
         "mainStats": [],
         "stats": {}
@@ -43098,6 +43098,22 @@
     "clearTime": "105s",
     "characters": [
       {
+        "name": "Flins",
+        "level": 90,
+        "constellation": 2,
+        "talents": [],
+        "weapon": {
+          "name": "Primordial Jade Winged-Spear",
+          "refinement": 2,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Columbina",
         "level": 90,
         "constellation": 2,
@@ -43141,22 +43157,6 @@
         },
         "artifacts": [
           "Noblesse Oblige"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Flins",
-        "level": 90,
-        "constellation": 2,
-        "talents": [],
-        "weapon": {
-          "name": "Primordial Jade Winged-Spear",
-          "refinement": 2,
-          "level": 90
-        },
-        "artifacts": [
-          "Night of the Sky's Unveiling"
         ],
         "mainStats": [],
         "stats": {}
@@ -44322,22 +44322,6 @@
     "clearTime": "117s",
     "characters": [
       {
-        "name": "Mona",
-        "level": 90,
-        "constellation": 6,
-        "talents": [],
-        "weapon": {
-          "name": "Reliquary of Truth",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "A Day Carved From Rising Winds"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
         "name": "Mavuika",
         "level": 90,
         "constellation": 0,
@@ -44349,6 +44333,22 @@
         },
         "artifacts": [
           "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
+        "name": "Mona",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Reliquary of Truth",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "A Day Carved From Rising Winds"
         ],
         "mainStats": [],
         "stats": {}
@@ -45762,6 +45762,22 @@
     "clearTime": "120s",
     "characters": [
       {
+        "name": "Mavuika",
+        "level": 90,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "Redhorn Stonethresher",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Durin",
         "level": 90,
         "constellation": 6,
@@ -45789,22 +45805,6 @@
         },
         "artifacts": [
           "Tenacity of the Millelith"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Mavuika",
-        "level": 90,
-        "constellation": 0,
-        "talents": [],
-        "weapon": {
-          "name": "Redhorn Stonethresher",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "Obsidian Codex"
         ],
         "mainStats": [],
         "stats": {}
@@ -46050,6 +46050,22 @@
     "clearTime": "68s",
     "characters": [
       {
+        "name": "Flins",
+        "level": 90,
+        "constellation": 1,
+        "talents": [],
+        "weapon": {
+          "name": "Bloodsoaked Ruins",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "Night of the Sky's Unveiling"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Columbina",
         "level": 100,
         "constellation": 6,
@@ -46077,22 +46093,6 @@
         },
         "artifacts": [
           "Celestial Gift"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Flins",
-        "level": 90,
-        "constellation": 1,
-        "talents": [],
-        "weapon": {
-          "name": "Bloodsoaked Ruins",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "Night of the Sky's Unveiling"
         ],
         "mainStats": [],
         "stats": {}
@@ -47058,6 +47058,22 @@
     "clearTime": "39s",
     "characters": [
       {
+        "name": "Skirk",
+        "level": 89,
+        "constellation": 0,
+        "talents": [],
+        "weapon": {
+          "name": "Azurelight",
+          "refinement": 1,
+          "level": 90
+        },
+        "artifacts": [
+          "2pc/2pc ATK%/ATK%"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Nicole",
         "level": 89,
         "constellation": 2,
@@ -47085,22 +47101,6 @@
         },
         "artifacts": [
           "A Day Carved From Rising Winds"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Skirk",
-        "level": 89,
-        "constellation": 0,
-        "talents": [],
-        "weapon": {
-          "name": "Azurelight",
-          "refinement": 1,
-          "level": 90
-        },
-        "artifacts": [
-          "2pc/2pc ATK%/ATK%"
         ],
         "mainStats": [],
         "stats": {}
@@ -47346,6 +47346,22 @@
     "clearTime": "30s",
     "characters": [
       {
+        "name": "Chasca",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Astral Vulture's Crimson Plumage",
+          "refinement": 3,
+          "level": 90
+        },
+        "artifacts": [
+          "Obsidian Codex"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Furina",
         "level": 90,
         "constellation": 2,
@@ -47389,22 +47405,6 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Chasca",
-        "level": 100,
-        "constellation": 6,
-        "talents": [],
-        "weapon": {
-          "name": "Astral Vulture's Crimson Plumage",
-          "refinement": 3,
-          "level": 90
-        },
-        "artifacts": [
-          "Obsidian Codex"
         ],
         "mainStats": [],
         "stats": {}
@@ -48066,6 +48066,22 @@
     "clearTime": "37s",
     "characters": [
       {
+        "name": "Skirk",
+        "level": 100,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Azurelight",
+          "refinement": 5,
+          "level": 90
+        },
+        "artifacts": [
+          "Finale of the Deep Galleries"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Escoffier",
         "level": 100,
         "constellation": 2,
@@ -48093,22 +48109,6 @@
         },
         "artifacts": [
           "Scroll of the Hero of Cinder City"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Skirk",
-        "level": 100,
-        "constellation": 6,
-        "talents": [],
-        "weapon": {
-          "name": "Azurelight",
-          "refinement": 5,
-          "level": 90
-        },
-        "artifacts": [
-          "Finale of the Deep Galleries"
         ],
         "mainStats": [],
         "stats": {}
@@ -48210,6 +48210,22 @@
     "clearTime": "39s",
     "characters": [
       {
+        "name": "Neuvillette",
+        "level": 90,
+        "constellation": 6,
+        "talents": [],
+        "weapon": {
+          "name": "Tome of the Eternal Flow",
+          "refinement": 3,
+          "level": 90
+        },
+        "artifacts": [
+          "Marechaussee Hunter"
+        ],
+        "mainStats": [],
+        "stats": {}
+      },
+      {
         "name": "Nicole",
         "level": 90,
         "constellation": 6,
@@ -48237,22 +48253,6 @@
         },
         "artifacts": [
           "A Day Carved From Rising Winds"
-        ],
-        "mainStats": [],
-        "stats": {}
-      },
-      {
-        "name": "Neuvillette",
-        "level": 90,
-        "constellation": 6,
-        "talents": [],
-        "weapon": {
-          "name": "Tome of the Eternal Flow",
-          "refinement": 3,
-          "level": 90
-        },
-        "artifacts": [
-          "Marechaussee Hunter"
         ],
         "mainStats": [],
         "stats": {}
